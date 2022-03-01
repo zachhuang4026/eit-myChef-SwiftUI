@@ -50,7 +50,7 @@ struct PlansView: View {
                         ScrollView(.horizontal) {
                             Text("Breakfast")
                             Text("\(recipes[0].title)")
-                            AsyncImage(url: URL(string: "https://www.macheesmo.com/wp-content/uploads/2018/10/Everything-Avocado-Toast-2016x1400.webp")) { image in
+                            AsyncImage(url: URL(string: recipes[0].imageUrl)) { image in
                                                    image
                                                        .resizable()
                                                        .scaledToFill()
@@ -61,6 +61,7 @@ struct PlansView: View {
                                                .background(Color.gray)
                                                .cornerRadius(15.0)
                         }
+                        .padding()
                         
                     }
                         
