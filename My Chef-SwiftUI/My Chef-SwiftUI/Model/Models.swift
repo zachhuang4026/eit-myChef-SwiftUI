@@ -14,6 +14,7 @@ struct Recipe: Codable, Identifiable {
     let prepTime: String?
     let difficulty: String?
     let body: String?
+    let imageUrl: String?
 }
 
 let recipesTestData = [
@@ -21,11 +22,14 @@ let recipesTestData = [
             id: "avt_2345",
             prepTime: "20",
             difficulty: "Easy",
-            body: "Slice avocado, smash it, paste it on the toast, add some pepper."),
+            body: "Slice avocado, smash it, paste it on the toast, add some pepper.",
+            imageUrl: "https://www.macheesmo.com/wp-content/uploads/2018/10/Everything-Avocado-Toast-2016x1400.webp"
+          ),
     Recipe(title:"Pasta",
             id: "pas_2345",
             prepTime: "10",
             difficulty: "Easy",
-            body: "Cook the pasta for 10 minutes, add tomato sauce."),
+            body: "Cook the pasta for 10 minutes, add tomato sauce.",
+            imageUrl: "https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Tomato-Spinach-Pasta-close.jpg"),
 
 ]
