@@ -49,8 +49,8 @@ struct PlansView: View {
                     HStack {
                         ScrollView(.horizontal) {
                             Text("Breakfast")
-                            Text("\(recipes[0].title)")
-                            AsyncImage(url: URL(string: recipes[0].imageUrl)) { image in
+                            Text("Avocado Toast")
+                            AsyncImage(url: URL(string: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")) { image in
                                                    image
                                                        .resizable()
                                                        .scaledToFill()
