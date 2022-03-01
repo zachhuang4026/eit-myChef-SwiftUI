@@ -8,13 +8,13 @@
 import Foundation
 
 struct Recipe: Codable, Identifiable {
-    let title: String?
+    let title: String
     // We can use GitHub to conformt to `Identifiable`
-    let id: String?
-    let prepTime: String?
-    let difficulty: String?
-    let body: String?
-    let imageUrl: String?
+    let id: String
+    let prepTime: String
+    let difficulty: String
+    let body: String
+    let imageUrl: String
 }
 
 let recipesTestData = [

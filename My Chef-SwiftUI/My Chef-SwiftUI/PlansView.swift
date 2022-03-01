@@ -10,6 +10,7 @@ import SwiftUI
 
 struct PlansView: View {
     var days = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+    var recipes: [Recipe] = []
     
     var body: some View {
         ScrollView {
@@ -48,7 +49,7 @@ struct PlansView: View {
                     HStack {
                         ScrollView(.horizontal) {
                             Text("Breakfast")
-                            Text("Avocado Toast")
+                            Text("\(recipes[0].title)")
                             AsyncImage(url: URL(string: "https://www.macheesmo.com/wp-content/uploads/2018/10/Everything-Avocado-Toast-2016x1400.webp")) { image in
                                                    image
                                                        .resizable()
@@ -73,6 +74,6 @@ struct PlansView: View {
 
 struct PlansView_Previews: PreviewProvider {
     static var previews: some View {
-        PlansView()
+        PlansView(recipes: recipesTestData)
     }
 }
