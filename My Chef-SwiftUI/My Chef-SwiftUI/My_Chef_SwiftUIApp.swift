@@ -16,7 +16,7 @@ struct My_Chef_SwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(githubIssues: GitHubIssues())
         }
     }
 }
