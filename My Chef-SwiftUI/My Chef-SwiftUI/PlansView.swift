@@ -1,5 +1,5 @@
 //
-//  ClosedIssueView.swift
+//  OpenIssuesView.swift
 //  GitHub Issues
 //
 //  Created by Zach Huang on 2022/2/25.
@@ -7,18 +7,23 @@
 
 import SwiftUI
 
-struct ClosedIssueView: View {
+
+struct PlansView: View {
+    
     @ObservedObject var githubIssues: GitHubIssues
+
     
     var body: some View {
         NavigationView {
-            List(githubIssues.closedIssues) { item in
+            List (githubIssues.openIssues) { item in
+                // NavigationLink to detail page
+                // ref: https://martinlasek.medium.com/swiftui-detail-view-44772246fa2a
                 NavigationLink(destination: IssueDetail(issue: item)) {
                     HStack {
-                        Image(systemName: "checkmark.diamond.fill")
-                            .foregroundColor(Color.green)
+                        Image(systemName: "questionmark.app.fill")
+                            .foregroundColor(Color.red)
                             .padding(.trailing)
-                        
+
                         VStack(alignment: .leading) {
                             Text("\(item.title ?? "Unknown Title")")
                                 .font(.title3)
@@ -29,14 +34,16 @@ struct ClosedIssueView: View {
                             }
                         }
                     }
-            }
-            .navigationTitle("Closed Issues")
+                    
+                }
+                .navigationTitle("Meals for the week")
+            
         }
     }
 }
 
-struct ClosedIssueView_Previews: PreviewProvider {
+struct PlansView_Previews: PreviewProvider {
     static var previews: some View {
-        ClosedIssueView(githubIssues: GitHubIssues())
+        PlansView(githubIssues: GitHubIssues())
     }
 }

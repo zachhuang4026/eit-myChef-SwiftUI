@@ -21,9 +21,9 @@
 		A4940DF627CE6CBB00C2091C /* GithubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940DF427CE6CBB00C2091C /* GithubClient.swift */; };
 		A4940DF727CE6CBB00C2091C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940DF527CE6CBB00C2091C /* Models.swift */; };
 		A4940DFD27CE6CCC00C2091C /* IssueDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940DF927CE6CCB00C2091C /* IssueDetail.swift */; };
-		A4940DFE27CE6CCC00C2091C /* ClosedIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940DFA27CE6CCB00C2091C /* ClosedIssueView.swift */; };
+		A4940DFE27CE6CCC00C2091C /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940DFA27CE6CCB00C2091C /* RecipesView.swift */; };
 		A4940DFF27CE6CCC00C2091C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940DFB27CE6CCB00C2091C /* ContentView.swift */; };
-		A4940E0127CE6CEB00C2091C /* OpenIssuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940E0027CE6CEB00C2091C /* OpenIssuesView.swift */; };
+		A4940E0127CE6CEB00C2091C /* PlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940E0027CE6CEB00C2091C /* PlansView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 		A4940DF427CE6CBB00C2091C /* GithubClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubClient.swift; sourceTree = "<group>"; };
 		A4940DF527CE6CBB00C2091C /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		A4940DF927CE6CCB00C2091C /* IssueDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueDetail.swift; sourceTree = "<group>"; };
-		A4940DFA27CE6CCB00C2091C /* ClosedIssueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedIssueView.swift; sourceTree = "<group>"; };
+		A4940DFA27CE6CCB00C2091C /* RecipesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		A4940DFB27CE6CCB00C2091C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../mpcs51030-2022-winter-assignment-7-zachhuang4026/GitHub Issues/GitHub Issues/ContentView.swift"; sourceTree = "<group>"; };
-		A4940E0027CE6CEB00C2091C /* OpenIssuesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenIssuesView.swift; sourceTree = "<group>"; };
+		A4940E0027CE6CEB00C2091C /* PlansView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				A4940DD227CE686100C2091C /* My_Chef_SwiftUIApp.swift */,
-				A4940E0027CE6CEB00C2091C /* OpenIssuesView.swift */,
-				A4940DFA27CE6CCB00C2091C /* ClosedIssueView.swift */,
+				A4940E0027CE6CEB00C2091C /* PlansView.swift */,
+				A4940DFA27CE6CCB00C2091C /* RecipesView.swift */,
 				A4940DFB27CE6CCB00C2091C /* ContentView.swift */,
 				A4940DF927CE6CCB00C2091C /* IssueDetail.swift */,
 				A4940DD627CE686200C2091C /* Assets.xcassets */,
@@ -190,12 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4940E0127CE6CEB00C2091C /* OpenIssuesView.swift in Sources */,
+				A4940E0127CE6CEB00C2091C /* PlansView.swift in Sources */,
 				A4940DF627CE6CBB00C2091C /* GithubClient.swift in Sources */,
 				A4940DFF27CE6CCC00C2091C /* ContentView.swift in Sources */,
 				A4940DD327CE686100C2091C /* My_Chef_SwiftUIApp.swift in Sources */,
 				A4940DFD27CE6CCC00C2091C /* IssueDetail.swift in Sources */,
-				A4940DFE27CE6CCC00C2091C /* ClosedIssueView.swift in Sources */,
+				A4940DFE27CE6CCC00C2091C /* RecipesView.swift in Sources */,
 				A4940DF727CE6CBB00C2091C /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
