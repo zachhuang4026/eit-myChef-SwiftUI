@@ -22,6 +22,7 @@ struct GroceryListView: View {
                     .padding()
                     .navigationTitle("Generate Grocery List")
                 }
+                Spacer()
                 buttomBarButton()
             }
         }

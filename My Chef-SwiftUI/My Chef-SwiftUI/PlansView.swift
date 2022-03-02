@@ -7,29 +7,43 @@
 
 import SwiftUI
 
+let coloredNavAppearance = UINavigationBarAppearance()
+
 struct PlansView: View {
+    
+    init() {
+            coloredNavAppearance.configureWithOpaqueBackground()
+            coloredNavAppearance.backgroundColor = .systemBlue
+            coloredNavAppearance.titleTextAttributes = [.foregroundColor: Color("textColor")]
+            coloredNavAppearance.largeTitleTextAttributes = [.foregroundColor: Color("backgroundColor")]
+                   
+            UINavigationBar.appearance().standardAppearance = coloredNavAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
+
+        }
+    
     var days = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
     let recipe = recipesTestData[0]
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack {
-                    topBarButton()
-                    
-                    ForEach(0..<7) {
-                        Divider()
-                        Text("\(days[$0])")
-                            .foregroundColor(Color("textColor"))
-                            .font(.title)
-                        Text("03/02")
-                        Divider()
-                        mealsScrollView(recipe: recipe)
+                ScrollView {
+                    VStack {
+                        topBarButton()
+                        
+                        ForEach(0..<7) {
+                            Divider()
+                            Text("\(days[$0])")
+                                .foregroundColor(Color("textColor"))
+                                .font(.title)
+                            Text("03/02")
+                            Divider()
+                            mealsScrollView(recipe: recipe)
+                        }
+                        
                     }
-                    
                 }
-            }
-            .navigationTitle("Meals for the week")
+                .navigationTitle("Meals for the week")
         }
         
     }
