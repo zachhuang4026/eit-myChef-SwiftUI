@@ -42,28 +42,69 @@ struct PlansView: View {
                 
                 ForEach(0..<7) {
                     Divider()
-                        Text("\(days[$0])")
-                            .foregroundColor(Color("textColor"))
-                            .font(.title)
+                    Text("\(days[$0])")
+                        .foregroundColor(Color("textColor"))
+                        .font(.title)
+                    Text("03/02")
                     Divider()
-                    HStack {
-                        ScrollView(.horizontal) {
-                            Text("Breakfast")
-                            Text("Avocado Toast")
-                            AsyncImage(url: URL(string: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")) { image in
-                                                   image
-                                                       .resizable()
-                                                       .scaledToFill()
-                                               } placeholder: {
-                                                   ProgressView()
-                                               }
-                                               .frame(width: 100, height: 100)
-                                               .background(Color.gray)
-                                               .cornerRadius(15.0)
+                    ScrollView(.horizontal) {
+                        HStack {
+                            VStack {
+                                Text("Breakfast")
+                                Text("Avocado Toast")
+                                Text("Easy | 10 mins")
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
+                                AsyncImage(url: URL(string: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")) { image in
+                                                           image
+                                                            .resizable()
+                                                            .scaledToFill()
+                                            } placeholder: {
+                                                ProgressView()
+                                            }
+                                            .frame(width: 100, height: 100)
+                                            .background(Color.gray)
+                                            .cornerRadius(15.0)
+                            }
+                            VStack {
+                                Text("Lunch")
+                                Text("Pasta")
+                                Text("Easy | 10 mins")
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
+                                AsyncImage(url: URL(string: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")) { image in
+                                                           image
+                                                            .resizable()
+                                                            .scaledToFill()
+                                            } placeholder: {
+                                                ProgressView()
+                                            }
+                                            .frame(width: 100, height: 100)
+                                            .background(Color.gray)
+                                            .cornerRadius(15.0)
+                            }
+                            VStack {
+                                Text("Dinner")
+                                Text("Pasta")
+                                Text("Easy | 10 mins")
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
+                                AsyncImage(url: URL(string: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")) { image in
+                                                           image
+                                                            .resizable()
+                                                            .scaledToFill()
+                                            } placeholder: {
+                                                ProgressView()
+                                            }
+                                            .frame(width: 100, height: 100)
+                                            .background(Color.gray)
+                                            .cornerRadius(15.0)
+                            }
                         }
-                        .padding()
+                        
                         
                     }
+                    .padding()
                         
                     
                 }
