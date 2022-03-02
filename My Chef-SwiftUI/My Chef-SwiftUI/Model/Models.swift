@@ -47,7 +47,7 @@ let groceryTestData = [
            ),
     Grocery(title: "Lemon",
             id: "lem_1234",
-            buyDate: "2021-01-29",
+            buyDate: "2021-01-26",
             amount: "5"
            ),
     Grocery(title: "Fish",
@@ -57,7 +57,7 @@ let groceryTestData = [
            ),
     Grocery(title: "Garlic",
             id: "glc_1234",
-            buyDate: "2021-01-29",
+            buyDate: "2021-01-28",
             amount: "10"
            ),
     Grocery(title: "Tomato",
@@ -72,12 +72,12 @@ let groceryTestData = [
            ),
     Grocery(title: "Parsely",
             id: "psl_1234",
-            buyDate: "2021-01-29",
+            buyDate: "2021-01-02",
             amount: "2"
            ),
     Grocery(title: "Chicken",
             id: "chk_1234",
-            buyDate: "2021-01-29",
+            buyDate: "2021-02-01",
             amount: "10"
            ),
 ]
