@@ -22,6 +22,7 @@
 		A4940DFE27CE6CCC00C2091C /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940DFA27CE6CCB00C2091C /* RecipesView.swift */; };
 		A4940DFF27CE6CCC00C2091C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940DFB27CE6CCB00C2091C /* ContentView.swift */; };
 		A4940E0127CE6CEB00C2091C /* PlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940E0027CE6CEB00C2091C /* PlansView.swift */; };
+		A4940E0327CF0A0B00C2091C /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940E0227CF0A0B00C2091C /* GroceryListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A4940DFA27CE6CCB00C2091C /* RecipesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		A4940DFB27CE6CCB00C2091C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../mpcs51030-2022-winter-assignment-7-zachhuang4026/GitHub Issues/GitHub Issues/ContentView.swift"; sourceTree = "<group>"; };
 		A4940E0027CE6CEB00C2091C /* PlansView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansView.swift; sourceTree = "<group>"; };
+		A4940E0227CF0A0B00C2091C /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				A4940DD227CE686100C2091C /* My_Chef_SwiftUIApp.swift */,
 				A4940E0027CE6CEB00C2091C /* PlansView.swift */,
+				A4940E0227CF0A0B00C2091C /* GroceryListView.swift */,
 				A4940DFA27CE6CCB00C2091C /* RecipesView.swift */,
 				A4940DFB27CE6CCB00C2091C /* ContentView.swift */,
 				A4940DD627CE686200C2091C /* Assets.xcassets */,
@@ -186,6 +189,7 @@
 			files = (
 				A4940E0127CE6CEB00C2091C /* PlansView.swift in Sources */,
 				A4940DFF27CE6CCC00C2091C /* ContentView.swift in Sources */,
+				A4940E0327CF0A0B00C2091C /* GroceryListView.swift in Sources */,
 				A4940DD327CE686100C2091C /* My_Chef_SwiftUIApp.swift in Sources */,
 				A4940DFE27CE6CCC00C2091C /* RecipesView.swift in Sources */,
 				A4940DF727CE6CBB00C2091C /* Models.swift in Sources */,
