@@ -9,11 +9,12 @@ import SwiftUI
 
 struct GroceryListView: View {
     @State private var amount = 2
+    let item = groceryTestData[1]
     
     var body: some View {
         NavigationView {
             HStack {
-                Stepper("Carrot buying: \(amount) lbs", value: $amount, in: 0...100)
+                Stepper("\(item.title) buying: \(item.amount) lbs", value: $amount, in: 0...100)
             }
             .padding()
             .navigationTitle("Generate Grocery List")

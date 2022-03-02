@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlansView: View {
     var days = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
-    var recipes: [Recipe] = []
+    let recipe = recipesTestData[0]
     
     var body: some View {
         NavigationView {
@@ -24,7 +24,7 @@ struct PlansView: View {
                             .font(.title)
                         Text("03/02")
                         Divider()
-                        mealsScrollView()
+                        mealsScrollView(recipe: recipe)
                     }
                     
                 }
@@ -37,7 +37,7 @@ struct PlansView: View {
 
 struct PlansView_Previews: PreviewProvider {
     static var previews: some View {
-        PlansView(recipes: recipesTestData)
+        PlansView()
     }
 }
 
@@ -76,16 +76,18 @@ struct topBarButton: View {
 }
 
 struct mealsScrollView: View {
+    var recipe: Recipe
+    
     var body: some View {
         ScrollView(.horizontal) {
             HStack {
                 VStack {
                     Text("Breakfast")
-                    Text("Avocado Toast")
-                    Text("Easy | 10 mins")
+                    Text("\(recipe.title)")
+                    Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
                         .font(.footnote)
                         .foregroundColor(.secondary)
-                    AsyncImage(url: URL(string: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")) { image in
+                    AsyncImage(url: URL(string: recipe.imageUrl)) { image in
                         image
                             .resizable()
                             .scaledToFill()
@@ -98,11 +100,11 @@ struct mealsScrollView: View {
                 }
                 VStack {
                     Text("Lunch")
-                    Text("Pasta")
-                    Text("Easy | 10 mins")
+                    Text("\(recipe.title)")
+                    Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
                         .font(.footnote)
                         .foregroundColor(.secondary)
-                    AsyncImage(url: URL(string: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")) { image in
+                    AsyncImage(url: URL(string: recipe.imageUrl)) { image in
                         image
                             .resizable()
                             .scaledToFill()
@@ -115,11 +117,11 @@ struct mealsScrollView: View {
                 }
                 VStack {
                     Text("Dinner")
-                    Text("Pasta")
-                    Text("Easy | 10 mins")
+                    Text("\(recipe.title)")
+                    Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
                         .font(.footnote)
                         .foregroundColor(.secondary)
-                    AsyncImage(url: URL(string: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")) { image in
+                    AsyncImage(url: URL(string: recipe.imageUrl)) { image in
                         image
                             .resizable()
                             .scaledToFill()
