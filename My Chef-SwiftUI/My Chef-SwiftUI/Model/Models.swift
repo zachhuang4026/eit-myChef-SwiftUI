@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Recipe: Codable, Identifiable {
+struct Recipe: Codable, Identifiable, Hashable {
     let title: String
     let id: String
     let prepTime: String
@@ -16,7 +16,7 @@ struct Recipe: Codable, Identifiable {
     let imageUrl: String
 }
 
-struct Grocery: Codable, Identifiable {
+struct Grocery: Codable, Identifiable, Hashable {
     let title: String
     let id: String
     let buyDate: String
@@ -37,6 +37,18 @@ let recipesTestData = [
             difficulty: "Easy",
             body: "Cook the pasta for 10 minutes, add tomato sauce.",
             imageUrl: "https://www.simplyrecipes.com/thmb/0AmnWWJK6-_PVcLOjD88oDIxAXM=/1600x900/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2013__02__pasta-puttanesca-fork-horiz-1600-aeb7e018a32b4bc2ae85ea893cabdb40.jpg"),
+    Recipe(title:"Shakshuka",
+            id: "sks_2345",
+            prepTime: "20",
+            difficulty: "Medium",
+            body: "Cook the pasta for 10 minutes, add tomato sauce.",
+            imageUrl: "https://www.twopeasandtheirpod.com/wp-content/uploads/2020/05/Shakshuka-2.jpg"),
+    Recipe(title:"Dumplings",
+            id: "dup_2345",
+            prepTime: "10",
+            difficulty: "Easy",
+            body: "Cook the pasta for 10 minutes, add tomato sauce.",
+            imageUrl: "https://static.onecms.io/wp-content/uploads/sites/44/2021/07/21/steamed-vegetable-dumplings-recipe.jpg"),
 ]
 
 let groceryTestData = [

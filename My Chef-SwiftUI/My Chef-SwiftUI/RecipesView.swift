@@ -10,7 +10,42 @@ import SwiftUI
 struct RecipesView: View {
     
     var body: some View {
-        Text("World")
+        let recipes = recipesTestData
+        let gridItemLayout = [GridItem(.flexible()), GridItem(.flexible())]
+        
+        ScrollView {
+            LazyVGrid(columns: gridItemLayout, spacing: 5) {
+                ForEach(recipes, id: \.self) {recipe in
+                    VStack {
+                        Spacer()
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text("\(recipe.title)")
+                                Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
+                            }
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.black)
+                                .frame(width: 30, height: 30)
+                        }
+                        AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                                    image
+                                        .resizable()
+                                        .scaledToFill()
+                                    } placeholder: {
+                                        ProgressView()
+                                    }
+                                    .frame(width: 120, height: 120)
+                                    .background(Color.gray)
+                                    .cornerRadius(15.0)
+                        Spacer()
+                    }
+                    
+                    
+                }
+            }
+        }
     }
 }
 
