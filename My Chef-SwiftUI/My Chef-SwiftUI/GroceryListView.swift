@@ -12,7 +12,6 @@ struct GroceryListView: View {
     let groceries = groceryTestData
     
     var body: some View {
-        NavigationView {
             VStack {
                 List (groceries) {grocery in
                     HStack {
@@ -25,8 +24,6 @@ struct GroceryListView: View {
                 Spacer()
                 buttomBarButton()
             }
-        }
-        
     }
 }
 
