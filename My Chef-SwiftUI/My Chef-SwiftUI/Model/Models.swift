@@ -50,4 +50,34 @@ let groceryTestData = [
             buyDate: "2021-01-29",
             amount: "5"
            ),
+    Grocery(title: "Fish",
+            id: "fih_1234",
+            buyDate: "2021-01-29",
+            amount: "2"
+           ),
+    Grocery(title: "Garlic",
+            id: "glc_1234",
+            buyDate: "2021-01-29",
+            amount: "10"
+           ),
+    Grocery(title: "Tomato",
+            id: "tmt_1234",
+            buyDate: "2021-02-03",
+            amount: "1"
+           ),
+    Grocery(title: "Sausage",
+            id: "ssg_1234",
+            buyDate: "2021-01-29",
+            amount: "10"
+           ),
+    Grocery(title: "Parsely",
+            id: "psl_1234",
+            buyDate: "2021-01-29",
+            amount: "2"
+           ),
+    Grocery(title: "Chicken",
+            id: "chk_1234",
+            buyDate: "2021-01-29",
+            amount: "10"
+           ),
 ]
