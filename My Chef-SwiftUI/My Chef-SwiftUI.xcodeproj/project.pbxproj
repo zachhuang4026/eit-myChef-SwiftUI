@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40CCD7C27D03EFC00183131 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CCD7B27D03EFC00183131 /* RecipeDetailView.swift */; };
 		A4940DD327CE686100C2091C /* My_Chef_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940DD227CE686100C2091C /* My_Chef_SwiftUIApp.swift */; };
 		A4940DD727CE686200C2091C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4940DD627CE686200C2091C /* Assets.xcassets */; };
 		A4940DDA27CE686200C2091C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4940DD927CE686200C2091C /* Preview Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A40CCD7B27D03EFC00183131 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		A4940DCF27CE686100C2091C /* My Chef-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Chef-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4940DD227CE686100C2091C /* My_Chef_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Chef_SwiftUIApp.swift; sourceTree = "<group>"; };
 		A4940DD627CE686200C2091C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				A4940E0427CF124E00C2091C /* FridgeView.swift */,
 				A4940E0227CF0A0B00C2091C /* GroceryListView.swift */,
 				A4940DFA27CE6CCB00C2091C /* RecipesView.swift */,
+				A40CCD7B27D03EFC00183131 /* RecipeDetailView.swift */,
 				A4940DFB27CE6CCB00C2091C /* ContentView.swift */,
 				A4940DD627CE686200C2091C /* Assets.xcassets */,
 				A4940DF327CE6C8E00C2091C /* Model */,
@@ -197,6 +200,7 @@
 				A4940DFE27CE6CCC00C2091C /* RecipesView.swift in Sources */,
 				A4940E0527CF124E00C2091C /* FridgeView.swift in Sources */,
 				A4940DF727CE6CBB00C2091C /* Models.swift in Sources */,
+				A40CCD7C27D03EFC00183131 /* RecipeDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
