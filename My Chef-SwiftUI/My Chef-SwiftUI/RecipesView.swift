@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RecipesView: View {
+    var colors = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
+    @State private var selectedDay = "Tues"
     
     var body: some View {
         let recipes = recipesTestData
@@ -25,9 +27,14 @@ struct RecipesView: View {
                                         .font(.footnote)
                                         .foregroundColor(.secondary)
                                 }
-                                Image(systemName: "star.fill")
-                                    .foregroundColor(.black)
-                                    .frame(width: 30, height: 30)
+                                //Image(systemName: "star.fill")
+                                //    .foregroundColor(.black)
+                                //    .frame(width: 30, height: 30)
+                                Picker("Choose a Day", selection: $selectedDay) {
+                                                ForEach(colors, id: \.self) {
+                                                    Text($0)
+                                                }
+                                            }
                             }
                             
                             Button(action: {
