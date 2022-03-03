@@ -29,16 +29,23 @@ struct RecipesView: View {
                                     .foregroundColor(.black)
                                     .frame(width: 30, height: 30)
                             }
-                            AsyncImage(url: URL(string: recipe.imageUrl)) { image in
-                                        image
-                                            .resizable()
-                                            .scaledToFill()
-                                        } placeholder: {
-                                            ProgressView()
+                            
+                            Button(action: {
+                                        }) {
+                                            NavigationLink(destination: RecipeDetailView()) {
+                                                AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                                                            image
+                                                                .resizable()
+                                                                .scaledToFill()
+                                                            } placeholder: {
+                                                                ProgressView()
+                                                            }
+                                                            .frame(width: 120, height: 120)
+                                                            .background(Color.gray)
+                                                            .cornerRadius(15.0)
+                                            }
                                         }
-                                        .frame(width: 120, height: 120)
-                                        .background(Color.gray)
-                                        .cornerRadius(15.0)
+                            
                             Spacer()
                         }
                         
