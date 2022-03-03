@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RecipeDetailView: View {
     var body: some View {
-        VStack {
+        ScrollView {
             AsyncImage(url: URL(string: "https://www.twopeasandtheirpod.com/wp-content/uploads/2020/05/Shakshuka-2.jpg")) { image in
                         image
                             .resizable()
@@ -36,9 +36,9 @@ struct RecipeDetailView: View {
             Text("Directions")
                 .font(.largeTitle)
             Text("1. There’s gorgeous Mediterranean weather year round in Tel Aviv, but let me tell you, the food scene is definitely something to write home about. I ate. And ate. And ate. Everything is fresh, veggie-heavy, loaded with herbs and layered with flavor. It’s a dream city for vegetarians and those who just like phenomenal food.\n 2. There’s gorgeous Mediterranean weather year round in Tel Aviv, but let me tell you, the food scene is definitely something to write home about. I ate. And ate. And ate. Everything is fresh, veggie-heavy, loaded with herbs and layered with flavor. It’s a dream city for vegetarians and those who just like phenomenal food.")
-                .padding(.horizontal)
             
-        }
+            }
+        .navigationTitle("Shakshuka")
     }
 }
 
