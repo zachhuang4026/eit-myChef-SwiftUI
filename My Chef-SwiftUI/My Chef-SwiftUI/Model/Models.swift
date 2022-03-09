@@ -103,13 +103,13 @@ let greekPrime = Restaurant(
 let recipesTestData = [avocadoToast, pasta]
 
 let plansTestData = [
-    [avocadoToast, pasta, pasta],
-    [pasta, pasta, pasta],
-    [pasta, pasta, avocadoToast],
-    [avocadoToast, avocadoToast, avocadoToast],
-    [pasta, avocadoToast, pasta],
-    [pasta, pasta, pasta],
-    [pasta, avocadoToast, pasta]
+    [avocadoToast, pasta, avocadoToast, pasta],
+    [pasta, pasta, avocadoToast, pasta],
+    [pasta, pasta, avocadoToast, avocadoToast],
+    [avocadoToast, avocadoToast, avocadoToast, avocadoToast],
+    [pasta, avocadoToast, avocadoToast, pasta],
+    [pasta, pasta, avocadoToast, pasta],
+    [pasta, avocadoToast, avocadoToast, pasta]
 ]
 
 

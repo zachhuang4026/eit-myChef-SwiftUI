@@ -98,7 +98,8 @@ struct mealsScrollView: View {
             HStack {
                 BreakFastView(recipe: plans[0])
                 LunchView(recipe: plans[1])
-                DinnerView(recipe: plans[2])
+                SnackView(recipe: plans[2])
+                DinnerView(recipe: plans[3])
             }
         }
         .padding()
@@ -159,6 +160,30 @@ struct DinnerView: View {
     var body: some View {
         VStack {
             Text("Dinner")
+            Text("\(recipe.title)")
+            Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
+                .font(.footnote)
+                .foregroundColor(.secondary)
+            AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(width: 100, height: 100)
+            .background(Color.gray)
+            .cornerRadius(15.0)
+        }
+    }
+}
+
+struct SnackView: View {
+    let recipe: Recipe
+    
+    var body: some View {
+        VStack {
+            Text("Snack")
             Text("\(recipe.title)")
             Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
                 .font(.footnote)
