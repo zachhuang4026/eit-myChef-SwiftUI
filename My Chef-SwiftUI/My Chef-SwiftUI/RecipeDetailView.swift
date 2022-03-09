@@ -8,43 +8,54 @@
 import SwiftUI
 
 struct RecipeDetailView: View {
+    
+    let recipe: Recipe
+    
     var body: some View {
         ScrollView {
-            AsyncImage(url: URL(string: "https://www.twopeasandtheirpod.com/wp-content/uploads/2020/05/Shakshuka-2.jpg")) { image in
+            AsyncImage(url: URL(string: recipe.imageUrl)) { image in
                         image
                             .resizable()
                             .scaledToFill()
                         } placeholder: {
                             ProgressView()
                         }
-                        .frame(width: 500, height: 200)
+                        .frame(maxWidth: .infinity, maxHeight: 200)
                         .background(Color.gray)
                         .cornerRadius(15.0)
-            Text("A classic mediterranean breakfast")
+            Text("\(recipe.description)")
+                .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
+                .foregroundColor(.secondary)
             
             Divider()
             
-            PrepView()
+            PrepView(recipe: recipe)
             
             Divider()
             
             Text("Ingredients")
                 .font(.largeTitle)
+                .foregroundColor(Color("titleColor"))
             
             IngredientsView()
             
+            Divider()
+            
             Text("Directions")
                 .font(.largeTitle)
-            Text("1. There’s gorgeous Mediterranean weather year round in Tel Aviv, but let me tell you, the food scene is definitely something to write home about. I ate. And ate. And ate. Everything is fresh, veggie-heavy, loaded with herbs and layered with flavor. It’s a dream city for vegetarians and those who just like phenomenal food.\n 2. There’s gorgeous Mediterranean weather year round in Tel Aviv, but let me tell you, the food scene is definitely something to write home about. I ate. And ate. And ate. Everything is fresh, veggie-heavy, loaded with herbs and layered with flavor. It’s a dream city for vegetarians and those who just like phenomenal food.")
+                .foregroundColor(Color("titleColor"))
+            
+            Text("\(recipe.instructions)")
+                .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
             
             }
-        .navigationTitle("Shakshuka")
+        .navigationTitle("\(recipe.title.replacingOccurrences(of: "_", with: " ").capitalized)")
     }
 }
 
 struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeDetailView()
+        RecipeDetailView(recipe: recipesTestData[0])
     }
 }
 
@@ -54,7 +65,7 @@ struct IngredientsView: View {
             Spacer()
             VStack(alignment: .leading) {
                 Text("Required")
-                    .font(.title)
+                    .font(.title2)
                 Text("1 onion")
                 Text("2 tomato")
             }
@@ -63,7 +74,7 @@ struct IngredientsView: View {
             Spacer()
             VStack(alignment: .leading) {
                 Text("My Pantry")
-                    .font(.title)
+                    .font(.title2)
                 Text("1 onion")
                 Text("2 tomato")
             }
@@ -73,19 +84,20 @@ struct IngredientsView: View {
 }
 
 struct PrepView: View {
+    let recipe: Recipe
+    
     var body: some View {
         HStack {
             Spacer()
             VStack(alignment: .leading) {
-                Text("Total Time: 1 hour")
-                Text("Prep Time: 15 mins")
+                Text("Prep Time: \(recipe.prepTime) mins")
             }
             Spacer()
             Divider()
             Spacer()
             VStack(alignment: .leading) {
-                Text("Serving: 4")
-                Text("Difficulty: Easy")
+                Text("Serving: \(recipe.servings.replacingOccurrences(of: "'", with: " "))")
+                Text("Difficulty: \(recipe.difficulty)")
             }
             Spacer()
         }

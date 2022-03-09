@@ -53,10 +53,11 @@ struct RecipesView_Previews: PreviewProvider {
 
 struct ImageButton: View {
     let recipe: Recipe
+    
     var body: some View {
         Button(action: {
         }) {
-            NavigationLink(destination: RecipeDetailView()) {
+            NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
                 AsyncImage(url: URL(string: recipe.imageUrl)) { image in
                     image
                         .resizable()
