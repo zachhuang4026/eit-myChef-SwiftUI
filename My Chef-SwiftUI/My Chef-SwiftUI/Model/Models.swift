@@ -35,6 +35,22 @@ struct Ingredient: Codable, Identifiable, Hashable {
     let state: String
 }
 
+func convertToDictionary(text: String) -> [Ingredient]? {
+    if let data = text.data(using: .utf8) {
+        do {
+            return try JSONSerialization.jsonObject(with: data, options: []) as? [Ingredient]
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    return nil
+}
+
+let str = "{\"name\":\"James\"}"
+
+let dict = convertToDictionary(text: str)
+
+
 let carrot = Ingredient(id: "1",
                         title: "carrot",
                         quantity: "2",
@@ -55,7 +71,7 @@ let recipesTestData = [
             difficulty: "Easy",
             prepTime: "20",
             imageUrl: "https://www.macheesmo.com/wp-content/uploads/2018/10/Everything-Avocado-Toast.jpg",
-            ingredients: "[\n {\"id\": \"sal\",\n  \"title\": \"salmon\",\n  \"quantity\": \"3\",\n  \"quantifier\": \"piece\",\n  \"state\": \"open\"\n },\n {\"id\": \"oli1\",\n  \"title\": \"olive_oil\",\n  \"quantity\": \"2\",\n  \"quantifier\": \"teaspoon\",\n  \"state\": \"open\"\n },\n {\"id\": \"bu\",\n  \"title\": \"butter\",\n  \"quantity\": \"2\",\n  \"quantifier\": \"tablespoon\",\n  \"state\": \"open\"\n },\n {\"id\": \"ga\",\n  \"title\": \"garlic\",\n  \"quantity\": \"4\",\n  \"quantifier\": \"piece\",\n  \"state\": \"open\"\n },\n {\"id\": \"yon\",\n  \"title\": \"yellow_onion\",\n  \"quantity\": \"1\",\n  \"quantifier\": \"piece\",\n  \"state\": \"open\"\n },\n {\"id\": \"br\",\n  \"title\": \"broth\",\n  \"quantity\": \"1/3\",\n  \"quantifier\": \"cup(80ml)\",\n  \"state\": \"open\"\n },\n {\"id\": \"to\",\n  \"title\": \"tomato\",\n  \"quantity\": \"1\",\n  \"quantifier\": \"piece\",\n  \"state\": \"open\"\n },\n {\"id\": \"hvyc\",\n  \"title\": \"heavy_cream\",\n  \"quantity\": \"1 3/4\",\n  \"quantifier\": \"cup(80ml)\",\n  \"state\": \"open\"\n },\n {\"id\": \"sa\",\n  \"title\": \"salt\",\n  \"quantity\": \"1\",\n  \"quantifier\": \"teaspoon\",\n  \"state\": \"open\"\n },\n {\"id\": \"bp\",\n  \"title\": \"black_pepper\",\n  \"quantity\": \"1\",\n  \"quantifier\": \"tea spoon\",\n  \"state\": \"open\"\n },\n {\"id\": \"spin\",\n  \"title\": \"spinach\",\n  \"quantity\": \"3\",\n  \"quantifier\": \"cup(80ml)\",\n  \"state\": \"open\"\n },\n {\"id\": \"par2\",\n  \"title\": \"parmesan\",\n  \"quantity\": \"1/2\",\n  \"quantifier\": \"cup(80ml)\",\n  \"state\": \"open\"\n }\n]",
+           ingredients: "[\n {\"id\": \"sal\",\n  \"title\": \"salmon\",\n  \"quantity\": \"3\",\n  \"quantifier\": \"piece\",\n  \"state\": \"open\"\n },\n {\"id\": \"oli1\",\n  \"title\": \"olive_oil\",\n  \"quantity\": \"2\",\n  \"quantifier\": \"teaspoon\",\n  \"state\": \"open\"\n },\n {\"id\": \"bu\",\n  \"title\": \"butter\",\n  \"quantity\": \"2\",\n  \"quantifier\": \"tablespoon\",\n  \"state\": \"open\"\n },\n {\"id\": \"ga\",\n  \"title\": \"garlic\",\n  \"quantity\": \"4\",\n  \"quantifier\": \"piece\",\n  \"state\": \"open\"\n },\n {\"id\": \"yon\",\n  \"title\": \"yellow_onion\",\n  \"quantity\": \"1\",\n  \"quantifier\": \"piece\",\n  \"state\": \"open\"\n },\n {\"id\": \"br\",\n  \"title\": \"broth\",\n  \"quantity\": \"1/3\",\n  \"quantifier\": \"cup(80ml)\",\n  \"state\": \"open\"\n },\n {\"id\": \"to\",\n  \"title\": \"tomato\",\n  \"quantity\": \"1\",\n  \"quantifier\": \"piece\",\n  \"state\": \"open\"\n },\n {\"id\": \"hvyc\",\n  \"title\": \"heavy_cream\",\n  \"quantity\": \"1 3/4\",\n  \"quantifier\": \"cup(80ml)\",\n  \"state\": \"open\"\n },\n {\"id\": \"sa\",\n  \"title\": \"salt\",\n  \"quantity\": \"1\",\n  \"quantifier\": \"teaspoon\",\n  \"state\": \"open\"\n },\n {\"id\": \"bp\",\n  \"title\": \"black_pepper\",\n  \"quantity\": \"1\",\n  \"quantifier\": \"tea spoon\",\n  \"state\": \"open\"\n },\n {\"id\": \"spin\",\n  \"title\": \"spinach\",\n  \"quantity\": \"3\",\n  \"quantifier\": \"cup(80ml)\",\n  \"state\": \"open\"\n },\n {\"id\": \"par2\",\n  \"title\": \"parmesan\",\n  \"quantity\": \"1/2\",\n  \"quantifier\": \"cup(80ml)\",\n  \"state\": \"open\"\n }\n]",
             instructions: "Slice avocado, smash it, paste it on the toast, add some pepper."
           ),
     Recipe(title:"Pasta",

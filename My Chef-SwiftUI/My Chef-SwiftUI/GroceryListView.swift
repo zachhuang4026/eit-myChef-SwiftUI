@@ -39,10 +39,8 @@ struct buttomBarButton: View {
             Spacer()
             Button(action: {
             }) {
-                // REDIRECT TO AMAZON FRESH
-                NavigationLink(destination: GroceryListView(ingredientData: IngredientData())) {
-                    Text("Purchase on \n Amazon Fresh")
-                }
+                // redirect to Amazon Fresh
+                Link("Purchase on \n Amazon Fresh", destination: URL(string: "https://www.amazon.com/alm/storefront?almBrandId=QW1hem9uIEZyZXNo")!)
             }
             .padding()
             .background(Color("buttonColor"))
@@ -51,12 +49,10 @@ struct buttomBarButton: View {
             .cornerRadius(15.0)
             
             Spacer()
-            Button(action: {
-            }) {
-                // EXPORT TO APPLE NOTES API
-                NavigationLink(destination: FridgeView()) {
-                    Text("Export List \n to Apple Notes")
-                }
+            
+            Button(action: actionSheet) {
+                // export to reminder or share
+                Text("Export List \n to Notes")
             }
             .padding()
             .background(Color("buttonColor"))
@@ -66,5 +62,11 @@ struct buttomBarButton: View {
             
             Spacer()
         }
+    }
+    
+    func actionSheet() {
+        guard let urlShare = URL(string: "https://developer.apple.com/xcode/swiftui/") else { return }
+        let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
+        UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
     }
 }
