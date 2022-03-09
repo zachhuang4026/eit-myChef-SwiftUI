@@ -23,7 +23,7 @@ struct PlansView: View {
         }
     
     var days = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
-    let recipe = recipesTestData[0]
+    let plans = plansTestData
     
     var body: some View {
         NavigationView {
@@ -39,7 +39,7 @@ struct PlansView: View {
                                 .font(.title)
                             Text("03/02")
                             Divider()
-                            mealsScrollView(recipe: recipe)
+                            mealsScrollView(plans: plansTestData[$0])
                         }
                         
                     }
@@ -91,18 +91,18 @@ struct topBarButton: View {
 }
 
 struct mealsScrollView: View {
-    var recipe: Recipe
+    var plans: [Recipe]
     
     var body: some View {
         ScrollView(.horizontal) {
             HStack {
                 VStack {
                     Text("Breakfast")
-                    Text("\(recipe.title)")
-                    Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
+                    Text("\(plans[0].title)")
+                    Text("\(plans[0].difficulty) | \(plans[0].prepTime) mins")
                         .font(.footnote)
                         .foregroundColor(.secondary)
-                    AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                    AsyncImage(url: URL(string: plans[0].imageUrl)) { image in
                         image
                             .resizable()
                             .scaledToFill()
@@ -115,11 +115,11 @@ struct mealsScrollView: View {
                 }
                 VStack {
                     Text("Lunch")
-                    Text("\(recipe.title)")
-                    Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
+                    Text("\(plans[1].title)")
+                    Text("\(plans[1].difficulty) | \(plans[1].prepTime) mins")
                         .font(.footnote)
                         .foregroundColor(.secondary)
-                    AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                    AsyncImage(url: URL(string: plans[1].imageUrl)) { image in
                         image
                             .resizable()
                             .scaledToFill()
@@ -132,11 +132,11 @@ struct mealsScrollView: View {
                 }
                 VStack {
                     Text("Dinner")
-                    Text("\(recipe.title)")
-                    Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
+                    Text("\(plans[2].title)")
+                    Text("\(plans[2].difficulty) | \(plans[2].prepTime) mins")
                         .font(.footnote)
                         .foregroundColor(.secondary)
-                    AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                    AsyncImage(url: URL(string: plans[2].imageUrl)) { image in
                         image
                             .resizable()
                             .scaledToFill()
