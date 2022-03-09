@@ -16,12 +16,13 @@ class IngredientData: ObservableObject {
             let task = URLSession.shared.dataTask(with: url) { data, _, error in
                 
                 guard let data = data, error == nil else {
+                    
                     return
                 }
                 
                 let decoder = JSONDecoder()
                 let ingredient = try? decoder.decode([Ingredient].self, from: data)
-                print("JSON")
+                
                 DispatchQueue.main.async {
                     if let ingredient = ingredient {
                         self.ingredients = ingredient.filter({ $0.state == "open" })
@@ -32,5 +33,31 @@ class IngredientData: ObservableObject {
             }
             task.resume()
         }
+}
+
+class recipeData: ObservableObject {
+    @Published var recipes: [Recipe] = []
     
+    init() {
+            let url = Bundle.main.url(forResource: "Recipes", withExtension: "json")!
+            
+            let task = URLSession.shared.dataTask(with: url) { data, _, error in
+                
+                guard let data = data, error == nil else {
+                    return
+                }
+                
+                let decoder = JSONDecoder()
+                let recipe = try? decoder.decode([Recipe].self, from: data)
+                print("JSON")
+                DispatchQueue.main.async {
+                    if let recipe = recipe {
+                        self.recipes = recipe.filter({ $0.ingredients.count > 0 })
+                        print(self.recipes)
+                    }
+                }
+                
+            }
+            task.resume()
+        }
 }
