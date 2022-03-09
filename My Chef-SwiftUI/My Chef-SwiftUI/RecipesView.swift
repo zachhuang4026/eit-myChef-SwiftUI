@@ -8,30 +8,29 @@
 import SwiftUI
 
 struct RecipesView: View {
-    var colors = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
+    var days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
     @State private var selectedDay = "Tues"
     
+    @ObservedObject var recipeData: RecipeData
     var body: some View {
-        let recipes = recipesTestData
+        
         let gridItemLayout = [GridItem(.flexible()), GridItem(.flexible())]
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: gridItemLayout, spacing: 5) {
-                    ForEach(recipes, id: \.self) {recipe in
+                    ForEach(recipeData.recipes) {recipe in
                         VStack {
                             Spacer()
                             HStack {
                                 VStack(alignment: .leading) {
-                                    Text("\(recipe.title)")
+                                    Text("\(recipe.title.replacingOccurrences(of: "_", with: " ").capitalized)")
                                     Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
                                         .font(.footnote)
                                         .foregroundColor(.secondary)
                                 }
-                                //Image(systemName: "star.fill")
-                                //    .foregroundColor(.black)
-                                //    .frame(width: 30, height: 30)
+                                
                                 Picker("Choose a Day", selection: $selectedDay) {
-                                                ForEach(colors, id: \.self) {
+                                                ForEach(days, id: \.self) {
                                                     Text($0)
                                                 }
                                             }
@@ -47,7 +46,7 @@ struct RecipesView: View {
                                                             } placeholder: {
                                                                 ProgressView()
                                                             }
-                                                            .frame(width: 120, height: 120)
+                                                            .frame(width: 150, height: 120)
                                                             .background(Color.gray)
                                                             .cornerRadius(15.0)
                                             }
@@ -67,6 +66,6 @@ struct RecipesView: View {
 
 struct RecipesView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipesView()
+        RecipesView(recipeData: RecipeData())
     }
 }

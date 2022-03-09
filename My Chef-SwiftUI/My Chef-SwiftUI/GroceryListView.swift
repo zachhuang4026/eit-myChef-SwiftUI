@@ -10,7 +10,6 @@ import SwiftUI
 struct GroceryListView: View {
     @State private var amount = 2
     @ObservedObject var ingredientData: IngredientData
-    let groceries = groceryTestData
     
     var body: some View {
             VStack {

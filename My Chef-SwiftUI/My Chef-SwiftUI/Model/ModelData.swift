@@ -26,7 +26,7 @@ class IngredientData: ObservableObject {
                 DispatchQueue.main.async {
                     if let ingredient = ingredient {
                         self.ingredients = ingredient.filter({ $0.state == "open" })
-                        print(self.ingredients)
+                        //print(self.ingredients)
                     }
                 }
                 
@@ -35,7 +35,7 @@ class IngredientData: ObservableObject {
         }
 }
 
-class recipeData: ObservableObject {
+class RecipeData: ObservableObject {
     @Published var recipes: [Recipe] = []
     
     init() {
@@ -52,7 +52,7 @@ class recipeData: ObservableObject {
                 print("JSON")
                 DispatchQueue.main.async {
                     if let recipe = recipe {
-                        self.recipes = recipe.filter({ $0.ingredients.count > 0 })
+                        self.recipes = recipe.filter({ $0.imageUrl != "" })
                         print(self.recipes)
                     }
                 }
