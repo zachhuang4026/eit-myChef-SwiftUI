@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct RecipesView: View {
-    var days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
-    @State private var selectedDay = "Tues"
+    
     
     @ObservedObject var recipeData: RecipeData
     var body: some View {
@@ -29,28 +28,10 @@ struct RecipesView: View {
                                         .foregroundColor(.secondary)
                                 }
                                 
-                                Picker("Choose a Day", selection: $selectedDay) {
-                                                ForEach(days, id: \.self) {
-                                                    Text($0)
-                                                }
-                                            }
+                                DaysPicker()
                             }
                             
-                            Button(action: {
-                                        }) {
-                                            NavigationLink(destination: RecipeDetailView()) {
-                                                AsyncImage(url: URL(string: recipe.imageUrl)) { image in
-                                                            image
-                                                                .resizable()
-                                                                .scaledToFill()
-                                                            } placeholder: {
-                                                                ProgressView()
-                                                            }
-                                                            .frame(width: 150, height: 120)
-                                                            .background(Color.gray)
-                                                            .cornerRadius(15.0)
-                                            }
-                                        }
+                            ImageButton(recipe: recipe)
                             
                             Spacer()
                         }
@@ -67,5 +48,39 @@ struct RecipesView: View {
 struct RecipesView_Previews: PreviewProvider {
     static var previews: some View {
         RecipesView(recipeData: RecipeData())
+    }
+}
+
+struct ImageButton: View {
+    let recipe: Recipe
+    var body: some View {
+        Button(action: {
+        }) {
+            NavigationLink(destination: RecipeDetailView()) {
+                AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                    image
+                        .resizable()
+                        .scaledToFill()
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(width: 150, height: 120)
+                .background(Color.gray)
+                .cornerRadius(15.0)
+            }
+        }
+    }
+}
+
+struct DaysPicker: View {
+    var days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
+    @State private var selectedDay = "Tues"
+    
+    var body: some View {
+        Picker("Choose a Day", selection: $selectedDay) {
+            ForEach(days, id: \.self) {
+                Text($0)
+            }
+        }
     }
 }
