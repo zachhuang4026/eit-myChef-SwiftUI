@@ -9,8 +9,8 @@ import SwiftUI
 
 struct RecipesView: View {
     
-    
     @ObservedObject var recipeData: RecipeData
+    
     var body: some View {
         
         let gridItemLayout = [GridItem(.flexible()), GridItem(.flexible())]
@@ -27,8 +27,10 @@ struct RecipesView: View {
                                         .font(.footnote)
                                         .foregroundColor(.secondary)
                                 }
-                                
-                                DaysPicker()
+                                VStack {
+                                    DaysPicker()
+                                    MealsPicker()
+                                }
                             }
                             
                             ImageButton(recipe: recipe)
@@ -78,10 +80,33 @@ struct DaysPicker: View {
     @State private var selectedDay = "Tues"
     
     var body: some View {
-        Picker("Choose a Day", selection: $selectedDay) {
+        Picker("days pick", selection: $selectedDay) {
             ForEach(days, id: \.self) {
                 Text($0)
+                    .font(.body)
+                    .multilineTextAlignment(.leading)
             }
         }
+        .frame(width: 50, height: 20)
+        .background(Color("buttonColor"))
+        .cornerRadius(10)
+    }
+}
+
+struct MealsPicker: View {
+    var meals = ["Breakfast", "Lunch", "Snack", "Dinner"]
+    @State private var selectedMeal = "Lunch"
+
+    var body: some View {
+        Picker("meals pick", selection: $selectedMeal) {
+            ForEach(meals, id: \.self) {
+                Text($0)
+                    .font(.body)
+                    .multilineTextAlignment(.leading)
+            }
+        }
+        .frame(width: 50, height: 20)
+        .background(Color("buttonColor"))
+        .cornerRadius(10)
     }
 }
