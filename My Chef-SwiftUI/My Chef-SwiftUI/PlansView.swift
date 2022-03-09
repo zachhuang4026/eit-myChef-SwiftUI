@@ -22,8 +22,9 @@ struct PlansView: View {
 
         }
     
-    var days = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
     let plans = plansTestData
+    
+    let now = Date.now
     
     var body: some View {
         NavigationView {
@@ -34,10 +35,11 @@ struct PlansView: View {
                         
                         ForEach(0..<7) {
                             Divider()
-                            Text("\(days[$0])")
+                            // date time https://www.hackingwithswift.com/books/ios-swiftui/working-with-dates
+                            Text(Date.now.addingTimeInterval(TimeInterval(86400*$0)), format: .dateTime.weekday())
                                 .foregroundColor(Color("textColor"))
                                 .font(.title)
-                            Text("03/02")
+                            Text(Date.now.addingTimeInterval(TimeInterval(86400*$0)), format: .dateTime.day().month())
                             Divider()
                             mealsScrollView(plans: plansTestData[$0])
                         }
