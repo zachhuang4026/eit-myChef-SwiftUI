@@ -91,113 +91,66 @@ struct topBarButton: View {
 }
 
 struct mealsScrollView: View {
-    var plans: [Recipe]
+    var plans: [Any]
+    let meals = ["Breakfast", "Lunch", "Snack", "Dinner"]
     
     var body: some View {
         ScrollView(.horizontal) {
             HStack {
-                BreakFastView(recipe: plans[0])
-                LunchView(recipe: plans[1])
-                SnackView(recipe: plans[2])
-                DinnerView(recipe: plans[3])
+                ForEach(0..<4) {
+                    MealsView(meal: meals[$0], item: plans[$0])
+                }
+                
             }
         }
         .padding()
     }
 }
 
-struct BreakFastView: View {
-    let recipe: Recipe
+struct MealsView: View {
+    //let recipe: Recipe
+    let meal: String
+    let item: Any
     
     var body: some View {
-        VStack {
-            Text("Breakfast")
-            Text("\(recipe.title)")
-            Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
-                .font(.footnote)
-                .foregroundColor(.secondary)
-            AsyncImage(url: URL(string: recipe.imageUrl)) { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-            } placeholder: {
-                ProgressView()
+        if let recipe = item as? Recipe {
+            VStack {
+                Text("\(meal)")
+                Text("\(recipe.title)")
+                Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+                AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                    image
+                        .resizable()
+                        .scaledToFill()
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(width: 100, height: 100)
+                .background(Color.gray)
+                .cornerRadius(15.0)
             }
-            .frame(width: 100, height: 100)
-            .background(Color.gray)
-            .cornerRadius(15.0)
+        } else if let restaurant = item as? Restaurant {
+            VStack {
+                Text("\(meal)")
+                Text("\(restaurant.title)")
+                Text("Eat Out!")
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+                AsyncImage(url: URL(string: restaurant.imageUrl)) { image in
+                    image
+                        .resizable()
+                        .scaledToFill()
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(width: 100, height: 100)
+                .background(Color.gray)
+                .cornerRadius(15.0)
+            }
         }
+        
     }
 }
 
-struct LunchView: View {
-    let recipe: Recipe
-    
-    var body: some View {
-        VStack {
-            Text("Lunch")
-            Text("\(recipe.title)")
-            Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
-                .font(.footnote)
-                .foregroundColor(.secondary)
-            AsyncImage(url: URL(string: recipe.imageUrl)) { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(width: 100, height: 100)
-            .background(Color.gray)
-            .cornerRadius(15.0)
-        }
-    }
-}
-
-struct DinnerView: View {
-    let recipe: Recipe
-    
-    var body: some View {
-        VStack {
-            Text("Dinner")
-            Text("\(recipe.title)")
-            Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
-                .font(.footnote)
-                .foregroundColor(.secondary)
-            AsyncImage(url: URL(string: recipe.imageUrl)) { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(width: 100, height: 100)
-            .background(Color.gray)
-            .cornerRadius(15.0)
-        }
-    }
-}
-
-struct SnackView: View {
-    let recipe: Recipe
-    
-    var body: some View {
-        VStack {
-            Text("Snack")
-            Text("\(recipe.title)")
-            Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
-                .font(.footnote)
-                .foregroundColor(.secondary)
-            AsyncImage(url: URL(string: recipe.imageUrl)) { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(width: 100, height: 100)
-            .background(Color.gray)
-            .cornerRadius(15.0)
-        }
-    }
-}
