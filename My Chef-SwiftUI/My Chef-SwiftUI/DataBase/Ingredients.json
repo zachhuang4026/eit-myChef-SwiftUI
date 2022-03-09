@@ -1,0 +1,487 @@
+[
+  {
+    "id": "art",
+    "title": "artichoke",
+    "state": "open"
+  },
+  {
+    "id": "ar",
+    "title": "arugula",
+    "state": "open"
+  },
+  {
+    "id": "as",
+    "title": "asparagus",
+    "state": "open"
+  },
+  {
+    "id": "avo",
+    "title": "avocado",
+    "state": "open"
+  },
+  {
+    "id": "ba1",
+    "title": "bacon",
+    "state": "open"
+  },
+  {
+    "id": "ba2",
+    "title": "basil",
+    "state": "open"
+  },
+  {
+    "id": "ba3",
+    "title": "bay_leaves",
+    "state": "open"
+  },
+  {
+    "id": "be2",
+    "title": "beef",
+    "state": "open"
+  },
+  {
+    "id": "be1",
+    "title": "beets",
+    "state": "open"
+  },
+  {
+    "id": "bp",
+    "title": "black_pepper",
+    "state": "open"
+  },
+  {
+    "id": "bc2",
+    "title": "bok choy",
+    "state": "open"
+  },
+  {
+    "id": "bro",
+    "title": "broccoli",
+    "state": "open"
+  },
+  {
+    "id": "bc1",
+    "title": "broccoli_crowns",
+    "state": "open"
+  },
+  {
+    "id": "br",
+    "title": "broth",
+    "state": "open"
+  },
+  {
+    "id": "bs",
+    "title": "brussels_sprouts",
+    "state": "open"
+  },
+  {
+    "id": "bu",
+    "title": "butter",
+    "state": "open"
+  },
+  {
+    "id": "ca2",
+    "title": "capers",
+    "state": "open"
+  },
+  {
+    "id": "ca1",
+    "title": "carrot",
+    "state": "open"
+  },
+  {
+    "id": "cau",
+    "title": "cauliflower",
+    "state": "open"
+  },
+  {
+    "id": "ce",
+    "title": "celery",
+    "state": "open"
+  },
+  {
+    "id": "cb",
+    "title": "chicken_breast",
+    "state": "open"
+  },
+  {
+    "id": "ct",
+    "title": "chicken_thigh",
+    "state": "open"
+  },
+  {
+    "id": "cf",
+    "title": "chili_flakes",
+    "state": "open"
+  },
+  {
+    "id": "cp",
+    "title": "chili_powder",
+    "state": "open"
+  },
+  {
+    "id": "ci",
+    "title": "cilantro",
+    "state": "open"
+  },
+  {
+    "id": "co",
+    "title": "corn",
+    "state": "open"
+  },
+  {
+    "id": "cu1",
+    "title": "cumcumber",
+    "state": "open"
+  },
+  {
+    "id": "cu2",
+    "title": "cumin",
+    "state": "open"
+  },
+  {
+    "id": "di",
+    "title": "dill",
+    "state": "open"
+  },
+  {
+    "id": "eg",
+    "title": "egg",
+    "state": "open"
+  },
+  {
+    "id": "ep",
+    "title": "eggplant",
+    "state": "open"
+  },
+  {
+    "id": "ff",
+    "title": "fish filet",
+    "state": "open"
+  },
+  {
+    "id": "gm",
+    "title": "garam_masala",
+    "state": "open"
+  },
+  {
+    "id": "ga",
+    "title": "garlic",
+    "state": "open"
+  },
+  {
+    "id": "gp2",
+    "title": "garlic_powder",
+    "state": "open"
+  },
+  {
+    "id": "gin",
+    "title": "ginger",
+    "state": "open"
+  },
+  {
+    "id": "gt",
+    "title": "grape_tomatoes",
+    "state": "open"
+  },
+  {
+    "id": "gb1",
+    "title": "green_beans",
+    "state": "open"
+  },
+  {
+    "id": "gbp",
+    "title": "green_bell_pepper",
+    "state": "open"
+  },
+  {
+    "id": "ca2",
+    "title": "green_cabbage",
+    "state": "open"
+  },
+  {
+    "id": "go",
+    "title": "green_onions",
+    "state": "open"
+  },
+  {
+    "id": "gb2",
+    "title": "ground_beef",
+    "state": "open"
+  },
+  {
+    "id": "gp1",
+    "title": "ground_pork",
+    "state": "open"
+  },
+  {
+    "id": "ham",
+    "title": "ham",
+    "state": "open"
+  },
+  {
+    "id": "il",
+    "title": "iceberg _lettuce",
+    "state": "open"
+  },
+  {
+    "id": "ja",
+    "title": "jalapeno",
+    "state": "open"
+  },
+  {
+    "id": "ji",
+    "title": "jicama",
+    "state": "open"
+  },
+  {
+    "id": "ka",
+    "title": "kale",
+    "state": "open"
+  },
+  {
+    "id": "ket",
+    "title": "ketchup",
+    "state": "open"
+  },
+  {
+    "id": "lam",
+    "title": "lamb",
+    "state": "open"
+  },
+  {
+    "id": "le1",
+    "title": "leeks",
+    "state": "open"
+  },
+  {
+    "id": "le2",
+    "title": "lemon",
+    "state": "open"
+  },
+  {
+    "id": "mb",
+    "title": "meatball",
+    "state": "open"
+  },
+  {
+    "id": "mi",
+    "title": "milk",
+    "state": "open"
+  },
+  {
+    "id": "mu",
+    "title": "mushroom",
+    "state": "open"
+  },
+  {
+    "id": "mus",
+    "title": "mustard",
+    "state": "open"
+  },
+  {
+    "id": "na",
+    "title": "napa_cabbage",
+    "state": "open"
+  },
+  {
+    "id": "no",
+    "title": "noodles",
+    "state": "open"
+  },
+  {
+    "id": "oli1",
+    "title": "olive_oil",
+    "state": "open"
+  },
+  {
+    "id": "oli2",
+    "title": "olives",
+    "state": "open"
+  },
+  {
+    "id": "on",
+    "title": "onion",
+    "state": "open"
+  },
+  {
+    "id": "ore",
+    "title": "oregano",
+    "state": "open"
+  },
+  {
+    "id": "pap",
+    "title": "paprika",
+    "state": "open"
+  },
+  {
+    "id": "par2",
+    "title": "parmesan",
+    "state": "open"
+  },
+  {
+    "id": "par3",
+    "title": "parsley",
+    "state": "open"
+  },
+  {
+    "id": "par",
+    "title": "parsnips",
+    "state": "open"
+  },
+  {
+    "id": "par1",
+    "title": "pasta",
+    "state": "open"
+  },
+  {
+    "id": "po",
+    "title": "pork",
+    "state": "open"
+  },
+  {
+    "id": "ra",
+    "title": "radishes",
+    "state": "open"
+  },
+  {
+    "id": "rbp",
+    "title": "red_bell_pepper",
+    "state": "open"
+  },
+  {
+    "id": "rl",
+    "title": "romaine_lettuce",
+    "state": "open"
+  },
+  {
+    "id": "ro",
+    "title": "rosemary",
+    "state": "open"
+  },
+  {
+    "id": "sa",
+    "title": "salt",
+    "state": "open"
+  },
+  {
+    "id": "sau",
+    "title": "sausage",
+    "state": "open"
+  },
+  {
+    "id": "sca1",
+    "title": "scallion",
+    "state": "open"
+  },
+  {
+    "id": "sca2",
+    "title": "scallop",
+    "state": "open"
+  },
+  {
+    "id": "se",
+    "title": "sesame_seed",
+    "state": "open"
+  },
+  {
+    "id": "sha",
+    "title": "shallots",
+    "state": "open"
+  },
+  {
+    "id": "shr",
+    "title": "shrimp",
+    "state": "open"
+  },
+  {
+    "id": "spa",
+    "title": "spaghetti",
+    "state": "open"
+  },
+  {
+    "id": "spin",
+    "title": "spinach",
+    "state": "open"
+  },
+  {
+    "id": "squa",
+    "title": "squash",
+    "state": "open"
+  },
+  {
+    "id": "ste",
+    "title": "steak",
+    "state": "open"
+  },
+  {
+    "id": "su",
+    "title": "sugar",
+    "state": "open"
+  },
+  {
+    "id": "sp",
+    "title": "sweet_potato",
+    "state": "open"
+  },
+  {
+    "id": "thy",
+    "title": "thyme",
+    "state": "open"
+  },
+  {
+    "id": "tf",
+    "title": "tofu",
+    "state": "open"
+  },
+  {
+    "id": "to",
+    "title": "tomato",
+    "state": "open"
+  },
+  {
+    "id": "tor",
+    "title": "tortillas",
+    "state": "open"
+  },
+  {
+    "id": "tur",
+    "title": "turkey",
+    "state": "open"
+  },
+  {
+    "id": "veg",
+    "title": "vegetable_oil",
+    "state": "open"
+  },
+  {
+    "id": "vi",
+    "title": "vinegar",
+    "state": "open"
+  },
+  {
+    "id": "wal",
+    "title": "walnut",
+    "state": "open"
+  },
+  {
+    "id": "ya",
+    "title": "yam",
+    "state": "open"
+  },
+  {
+    "id": "yp",
+    "title": "yellow_potato",
+    "state": "open"
+  },
+  {
+    "id": "yo",
+    "title": "yogurt",
+    "state": "open"
+  },
+  {
+    "id": "zu",
+    "title": "zucchini",
+    "state": "open"
+  }
+]

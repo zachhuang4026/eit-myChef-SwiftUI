@@ -9,14 +9,15 @@ import SwiftUI
 
 struct GroceryListView: View {
     @State private var amount = 2
+    @ObservedObject var ingredientData: IngredientData
     let groceries = groceryTestData
     
     var body: some View {
             VStack {
-                List (groceries) {grocery in
+                List (ingredientData.ingredients) {grocery in
                     HStack {
                         // AMOUNT BUG NOT FIXED YET -
-                        Stepper("\(grocery.title) buying: \(amount) lbs", value: $amount, in: 0...100)
+                        Stepper("\(grocery.title.replacingOccurrences(of: "_", with: " ").capitalized) buying: \(amount) lbs", value: $amount, in: 0...100)
                     }
                     .padding()
                     .navigationTitle("Generate Grocery List")
@@ -29,7 +30,7 @@ struct GroceryListView: View {
 
 struct GroceryListView_Previews: PreviewProvider {
     static var previews: some View {
-        GroceryListView()
+        GroceryListView(ingredientData: IngredientData())
     }
 }
 
@@ -40,7 +41,7 @@ struct buttomBarButton: View {
             Button(action: {
             }) {
                 // REDIRECT TO AMAZON FRESH
-                NavigationLink(destination: GroceryListView()) {
+                NavigationLink(destination: GroceryListView(ingredientData: IngredientData())) {
                     Text("Purchase on \n Amazon Fresh")
                 }
             }

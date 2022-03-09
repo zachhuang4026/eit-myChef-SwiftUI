@@ -62,7 +62,7 @@ struct topBarButton: View {
             Spacer()
             Button(action: {
             }) {
-                NavigationLink(destination: GroceryListView()) {
+                NavigationLink(destination: GroceryListView(ingredientData: IngredientData())) {
                 Text("Generate \n Grocery List")
                 }
             }

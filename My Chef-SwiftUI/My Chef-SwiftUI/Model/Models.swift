@@ -23,6 +23,12 @@ struct Grocery: Codable, Identifiable, Hashable {
     let amount: String
 }
 
+struct Ingredient: Codable, Identifiable, Hashable {
+    let id: String
+    let title: String
+    let state: String
+}
+
 let recipesTestData = [
     Recipe(title:"Avocado Toast",
             id: "avt_2345",
