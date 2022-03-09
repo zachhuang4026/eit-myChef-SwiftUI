@@ -25,6 +25,7 @@
 		A4940E0127CE6CEB00C2091C /* PlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940E0027CE6CEB00C2091C /* PlansView.swift */; };
 		A4940E0327CF0A0B00C2091C /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940E0227CF0A0B00C2091C /* GroceryListView.swift */; };
 		A4940E0527CF124E00C2091C /* FridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940E0427CF124E00C2091C /* FridgeView.swift */; };
+		A49FAD2F27D9430E00511610 /* PlansManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49FAD2E27D9430E00511610 /* PlansManager.swift */; };
 		A4D5DD8D27D8E69200B25DB4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D5DD8C27D8E69200B25DB4 /* ModelData.swift */; };
 		A4D5DD9327D8FAAF00B25DB4 /* Ingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = A4D5DD9227D8FAAF00B25DB4 /* Ingredients.json */; };
 		A4D5DD9527D8FAD900B25DB4 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = A4D5DD9427D8FAD900B25DB4 /* Recipes.json */; };
@@ -43,6 +44,7 @@
 		A4940E0027CE6CEB00C2091C /* PlansView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansView.swift; sourceTree = "<group>"; };
 		A4940E0227CF0A0B00C2091C /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		A4940E0427CF124E00C2091C /* FridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeView.swift; sourceTree = "<group>"; };
+		A49FAD2E27D9430E00511610 /* PlansManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansManager.swift; sourceTree = "<group>"; };
 		A4D5DD8C27D8E69200B25DB4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A4D5DD9227D8FAAF00B25DB4 /* Ingredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ingredients.json; sourceTree = "<group>"; };
 		A4D5DD9427D8FAD900B25DB4 /* Recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				A4940DF527CE6CBB00C2091C /* Models.swift */,
 				A4D5DD8C27D8E69200B25DB4 /* ModelData.swift */,
+				A49FAD2E27D9430E00511610 /* PlansManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				A4940E0327CF0A0B00C2091C /* GroceryListView.swift in Sources */,
 				A4940DD327CE686100C2091C /* My_Chef_SwiftUIApp.swift in Sources */,
 				A4940DFE27CE6CCC00C2091C /* RecipesView.swift in Sources */,
+				A49FAD2F27D9430E00511610 /* PlansManager.swift in Sources */,
 				A4940E0527CF124E00C2091C /* FridgeView.swift in Sources */,
 				A4940DF727CE6CBB00C2091C /* Models.swift in Sources */,
 				A40CCD7C27D03EFC00183131 /* RecipeDetailView.swift in Sources */,
