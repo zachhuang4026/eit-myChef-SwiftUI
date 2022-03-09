@@ -2,486 +2,764 @@
   {
     "id": "art",
     "title": "artichoke",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ar",
     "title": "arugula",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "as",
     "title": "asparagus",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "avo",
     "title": "avocado",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ba1",
     "title": "bacon",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ba2",
     "title": "basil",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ba3",
     "title": "bay_leaves",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "be2",
     "title": "beef",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "be1",
     "title": "beets",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "bp",
     "title": "black_pepper",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "bc2",
     "title": "bok choy",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "bro",
     "title": "broccoli",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "bc1",
     "title": "broccoli_crowns",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "br",
     "title": "broth",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "bs",
     "title": "brussels_sprouts",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "bu",
     "title": "butter",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ca2",
     "title": "capers",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ca1",
     "title": "carrot",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "cau",
     "title": "cauliflower",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ce",
     "title": "celery",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "cb",
     "title": "chicken_breast",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ct",
     "title": "chicken_thigh",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "cf",
     "title": "chili_flakes",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "cp",
     "title": "chili_powder",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ci",
     "title": "cilantro",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "co",
     "title": "corn",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "cu1",
     "title": "cumcumber",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "cu2",
     "title": "cumin",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "di",
     "title": "dill",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "eg",
     "title": "egg",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ep",
     "title": "eggplant",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ff",
     "title": "fish filet",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "gm",
     "title": "garam_masala",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ga",
     "title": "garlic",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "gp2",
     "title": "garlic_powder",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "gin",
     "title": "ginger",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "gt",
     "title": "grape_tomatoes",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "gb1",
     "title": "green_beans",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "gbp",
     "title": "green_bell_pepper",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ca2",
     "title": "green_cabbage",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "go",
     "title": "green_onions",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "gb2",
     "title": "ground_beef",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "gp1",
     "title": "ground_pork",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ham",
     "title": "ham",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "il",
     "title": "iceberg _lettuce",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ja",
     "title": "jalapeno",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ji",
     "title": "jicama",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ka",
     "title": "kale",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ket",
     "title": "ketchup",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "lam",
     "title": "lamb",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "le1",
     "title": "leeks",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "le2",
     "title": "lemon",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "mb",
     "title": "meatball",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "mi",
     "title": "milk",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "mu",
     "title": "mushroom",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "mus",
     "title": "mustard",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "na",
     "title": "napa_cabbage",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "no",
     "title": "noodles",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "oli1",
     "title": "olive_oil",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "oli2",
     "title": "olives",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "on",
     "title": "onion",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ore",
     "title": "oregano",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "pap",
     "title": "paprika",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "par2",
     "title": "parmesan",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "par3",
     "title": "parsley",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "par",
     "title": "parsnips",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "par1",
     "title": "pasta",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "po",
     "title": "pork",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ra",
     "title": "radishes",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "rbp",
     "title": "red_bell_pepper",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "rl",
     "title": "romaine_lettuce",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ro",
     "title": "rosemary",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "sa",
     "title": "salt",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "sau",
     "title": "sausage",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "sca1",
     "title": "scallion",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "sca2",
     "title": "scallop",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "se",
     "title": "sesame_seed",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "sha",
     "title": "shallots",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "shr",
     "title": "shrimp",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "spa",
     "title": "spaghetti",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "spin",
     "title": "spinach",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "squa",
     "title": "squash",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ste",
     "title": "steak",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "su",
     "title": "sugar",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "sp",
     "title": "sweet_potato",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "thy",
     "title": "thyme",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "tf",
     "title": "tofu",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "to",
     "title": "tomato",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "tor",
     "title": "tortillas",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "tur",
     "title": "turkey",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "veg",
     "title": "vegetable_oil",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "vi",
     "title": "vinegar",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "wal",
     "title": "walnut",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ya",
     "title": "yam",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "yp",
     "title": "yellow_potato",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "yo",
     "title": "yogurt",
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "zu",
     "title": "zucchini",
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": "sal",
+    "title": "salmon",
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": "yon",
+    "title": "yellow_onion",
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": "crm",
+    "title": "cream",
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": "hyc",
+    "title": "heavy_cream",
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": "wt",
+    "title": "water",
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": "uslb",
+    "title": "unsalted_butter",
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": "vgo",
+    "title": "vegetable_oil",
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": "rdp",
+    "title": "red_pepper",
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": "aghp",
+    "title": "angle_hair_pasta",
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": "vga",
+    "title": "vegeta",
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": null,
+    "title": null,
+    "quantity": "0",
+    "quantifier": "piece",
+    "state": "open"
+  },
+  {
+    "id": null,
+    "title": null,
+    "quantity": "0",
+    "quantifier": "piece",
     "state": "open"
   }
 ]

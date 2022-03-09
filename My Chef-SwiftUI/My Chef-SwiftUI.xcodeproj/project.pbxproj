@@ -26,7 +26,8 @@
 		A4940E0327CF0A0B00C2091C /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940E0227CF0A0B00C2091C /* GroceryListView.swift */; };
 		A4940E0527CF124E00C2091C /* FridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940E0427CF124E00C2091C /* FridgeView.swift */; };
 		A4D5DD8D27D8E69200B25DB4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D5DD8C27D8E69200B25DB4 /* ModelData.swift */; };
-		A4D5DD9127D8E93C00B25DB4 /* Ingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = A4D5DD9027D8E93C00B25DB4 /* Ingredients.json */; };
+		A4D5DD9327D8FAAF00B25DB4 /* Ingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = A4D5DD9227D8FAAF00B25DB4 /* Ingredients.json */; };
+		A4D5DD9527D8FAD900B25DB4 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = A4D5DD9427D8FAD900B25DB4 /* Recipes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +44,8 @@
 		A4940E0227CF0A0B00C2091C /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		A4940E0427CF124E00C2091C /* FridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeView.swift; sourceTree = "<group>"; };
 		A4D5DD8C27D8E69200B25DB4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		A4D5DD9027D8E93C00B25DB4 /* Ingredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ingredients.json; sourceTree = "<group>"; };
+		A4D5DD9227D8FAAF00B25DB4 /* Ingredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ingredients.json; sourceTree = "<group>"; };
+		A4D5DD9427D8FAD900B25DB4 /* Recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +121,8 @@
 		A4D5DD8927D8E61400B25DB4 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
-				A4D5DD9027D8E93C00B25DB4 /* Ingredients.json */,
+				A4D5DD9227D8FAAF00B25DB4 /* Ingredients.json */,
+				A4D5DD9427D8FAD900B25DB4 /* Recipes.json */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -194,7 +197,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D5DD9127D8E93C00B25DB4 /* Ingredients.json in Resources */,
+				A4D5DD9527D8FAD900B25DB4 /* Recipes.json in Resources */,
+				A4D5DD9327D8FAAF00B25DB4 /* Ingredients.json in Resources */,
 				A4940DDA27CE686200C2091C /* Preview Assets.xcassets in Resources */,
 				A4940DD727CE686200C2091C /* Assets.xcassets in Resources */,
 				A4940DE127CE68B400C2091C /* GoogleService-Info.plist in Resources */,
