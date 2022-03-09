@@ -96,61 +96,83 @@ struct mealsScrollView: View {
     var body: some View {
         ScrollView(.horizontal) {
             HStack {
-                VStack {
-                    Text("Breakfast")
-                    Text("\(plans[0].title)")
-                    Text("\(plans[0].difficulty) | \(plans[0].prepTime) mins")
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
-                    AsyncImage(url: URL(string: plans[0].imageUrl)) { image in
-                        image
-                            .resizable()
-                            .scaledToFill()
-                    } placeholder: {
-                        ProgressView()
-                    }
-                    .frame(width: 100, height: 100)
-                    .background(Color.gray)
-                    .cornerRadius(15.0)
-                }
-                VStack {
-                    Text("Lunch")
-                    Text("\(plans[1].title)")
-                    Text("\(plans[1].difficulty) | \(plans[1].prepTime) mins")
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
-                    AsyncImage(url: URL(string: plans[1].imageUrl)) { image in
-                        image
-                            .resizable()
-                            .scaledToFill()
-                    } placeholder: {
-                        ProgressView()
-                    }
-                    .frame(width: 100, height: 100)
-                    .background(Color.gray)
-                    .cornerRadius(15.0)
-                }
-                VStack {
-                    Text("Dinner")
-                    Text("\(plans[2].title)")
-                    Text("\(plans[2].difficulty) | \(plans[2].prepTime) mins")
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
-                    AsyncImage(url: URL(string: plans[2].imageUrl)) { image in
-                        image
-                            .resizable()
-                            .scaledToFill()
-                    } placeholder: {
-                        ProgressView()
-                    }
-                    .frame(width: 100, height: 100)
-                    .background(Color.gray)
-                    .cornerRadius(15.0)
-                }
+                BreakFastView(recipe: plans[0])
+                LunchView(recipe: plans[1])
+                DinnerView(recipe: plans[2])
             }
-            
-            
         }
         .padding()
+    }
+}
+
+struct BreakFastView: View {
+    let recipe: Recipe
+    
+    var body: some View {
+        VStack {
+            Text("Breakfast")
+            Text("\(recipe.title)")
+            Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
+                .font(.footnote)
+                .foregroundColor(.secondary)
+            AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(width: 100, height: 100)
+            .background(Color.gray)
+            .cornerRadius(15.0)
+        }
+    }
+}
+
+struct LunchView: View {
+    let recipe: Recipe
+    
+    var body: some View {
+        VStack {
+            Text("Lunch")
+            Text("\(recipe.title)")
+            Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
+                .font(.footnote)
+                .foregroundColor(.secondary)
+            AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(width: 100, height: 100)
+            .background(Color.gray)
+            .cornerRadius(15.0)
+        }
+    }
+}
+
+struct DinnerView: View {
+    let recipe: Recipe
+    
+    var body: some View {
+        VStack {
+            Text("Dinner")
+            Text("\(recipe.title)")
+            Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
+                .font(.footnote)
+                .foregroundColor(.secondary)
+            AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(width: 100, height: 100)
+            .background(Color.gray)
+            .cornerRadius(15.0)
+        }
     }
 }
