@@ -122,16 +122,20 @@ struct MealsView: View {
                 Text("\(recipe.difficulty) | \(recipe.prepTime) mins")
                     .font(.footnote)
                     .foregroundColor(.secondary)
-                AsyncImage(url: URL(string: recipe.imageUrl)) { image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                } placeholder: {
-                    ProgressView()
+                
+                NavigationLink(destination: RecipeDetailView(recipe: recipe)){
+                    AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                        image
+                            .resizable()
+                            .scaledToFill()
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    .frame(width: 100, height: 100)
+                    .background(Color.gray)
+                    .cornerRadius(15.0)
                 }
-                .frame(width: 100, height: 100)
-                .background(Color.gray)
-                .cornerRadius(15.0)
+                
             }
         } else if let restaurant = item as? Restaurant {
             VStack {
@@ -140,16 +144,19 @@ struct MealsView: View {
                 Text("Eat Out!")
                     .font(.footnote)
                     .foregroundColor(.secondary)
-                AsyncImage(url: URL(string: restaurant.imageUrl)) { image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                } placeholder: {
-                    ProgressView()
+                NavigationLink(destination: RestaurantDetailView(restaurant: restaurant)){
+                    AsyncImage(url: URL(string: restaurant.imageUrl)) { image in
+                        image
+                            .resizable()
+                            .scaledToFill()
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    .frame(width: 100, height: 100)
+                    .background(Color.gray)
+                    .cornerRadius(15.0)
                 }
-                .frame(width: 100, height: 100)
-                .background(Color.gray)
-                .cornerRadius(15.0)
+                
             }
         }
         
