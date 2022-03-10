@@ -37,7 +37,7 @@ struct RecipeDetailView: View {
                 .font(.largeTitle)
                 .foregroundColor(Color("titleColor"))
             
-            IngredientsView()
+            IngredientsView(recipe: recipe)
             
             Divider()
             
@@ -60,14 +60,19 @@ struct RecipeDetailView_Previews: PreviewProvider {
 }
 
 struct IngredientsView: View {
+    let recipe: Recipe
+    
     var body: some View {
         HStack {
             Spacer()
             VStack(alignment: .leading) {
                 Text("Required")
                     .font(.title2)
-                Text("1 onion")
-                Text("2 tomato")
+                ForEach(recipe.ingredients) { item in
+                    Text("\(item.title.replacingOccurrences(of: "_", with: " ").capitalized): \(item.quantity) \(item.quantifier)")
+                        .font(.footnote)
+                }
+                
             }
             Spacer()
             Divider()
@@ -75,8 +80,10 @@ struct IngredientsView: View {
             VStack(alignment: .leading) {
                 Text("My Pantry")
                     .font(.title2)
-                Text("1 onion")
-                Text("2 tomato")
+                ForEach(recipe.ingredients) { item in
+                    Text("\(item.state) \(item.title.replacingOccurrences(of: "_", with: " ").capitalized)")
+                        .font(.footnote)
+                }
             }
             Spacer()
         }
