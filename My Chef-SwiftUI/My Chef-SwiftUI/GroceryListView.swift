@@ -8,18 +8,13 @@
 import SwiftUI
 
 struct GroceryListView: View {
-    @State private var amount = 2
+    
     @ObservedObject var ingredientData: IngredientData
     
     var body: some View {
             VStack {
                 List (ingredientData.ingredients) {grocery in
-                    HStack {
-                        // AMOUNT BUG NOT FIXED YET -
-                        Stepper("\(grocery.title.replacingOccurrences(of: "_", with: " ").capitalized) buying: \(amount) lbs", value: $amount, in: 0...100)
-                    }
-                    .padding()
-                    .navigationTitle("Generate Grocery List")
+                    ExtractedView(grocery: grocery)
                 }
                 Spacer()
                 buttomBarButton()
@@ -68,5 +63,18 @@ struct buttomBarButton: View {
         guard let urlShare = URL(string: "https://developer.apple.com/xcode/swiftui/") else { return }
         let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
         UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+    }
+}
+
+struct ExtractedView: View {
+    @State private var amount = 2
+    let grocery: Ingredient
+    var body: some View {
+        HStack {
+            // AMOUNT BUG NOT FIXED YET -
+            Stepper("\(grocery.title.replacingOccurrences(of: "_", with: " ").capitalized): \(amount) lbs", value: $amount, in: 0...100)
+        }
+        .padding()
+        .navigationTitle("Generate Grocery List")
     }
 }
