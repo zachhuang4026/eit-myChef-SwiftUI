@@ -28,6 +28,7 @@ struct FridgeView: View {
                     Spacer()
                     Spacer()
                     Text("V")
+                        .foregroundColor(.green)
                     Spacer()
                     Text("\(grocery.buyDate)")
                     Spacer()

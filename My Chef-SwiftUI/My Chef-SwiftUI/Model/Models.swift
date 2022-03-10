@@ -90,6 +90,28 @@ let pasta = Recipe(title:"Pasta",
                   instructions: "Cook the pasta for 10 minutes, add tomato sauce."
                )
 
+let salad = Recipe(title:"salad",
+                   id: "sld_2345",
+                   description: "You won’t believe",
+                   servings: "2-3",
+                   difficulty: "Easy",
+                   prepTime: "10",
+                   imageUrl: "https://www.thespruceeats.com/thmb/S6hSYjz9-nUCPb_5bfuDIz15SwI=/2667x2000/smart/filters:no_upscale()/classic-caesar-salad-recipe-996054-Hero_01-33c94cc8b8e841ee8f2a815816a0af95.jpg",
+                  ingredients: [carrot, water],
+                  instructions: "Cook the pasta for 10 minutes, add tomato sauce."
+               )
+
+let mincePorkRice = Recipe(title:"Mince Pork Rice",
+                           id: "mpr_123",
+                           description: "Tawian's Best Choice",
+                           servings: "2-3",
+                           difficulty: "Easy",
+                           prepTime: "10",
+                           imageUrl: "https://i0.wp.com/themissinglokness.com/wp-content/uploads/2014/12/666B3012-3.jpg?fit=700%2C698&ssl=1",
+                          ingredients: [carrot, water],
+                          instructions: "Cook the pasta for 10 minutes, add tomato sauce."
+                       )
+
 let greekPrime = Restaurant(
     id: "1",
     title: "Greek Prime",
@@ -100,13 +122,33 @@ let greekPrime = Restaurant(
     imageUrl: "https://cdn.usarestaurants.info/assets/uploads/5acde208230318c28b8cfdbc6ccb0a01_-united-states-illinois-cook-county-chicago-greek-prime-773-565-4690htm.jpg"
 )
 
+let fiveGuys = Restaurant(
+    id: "3",
+    title: "Five Guys",
+    address: "1456 E 53rd St, Chicago, IL 60615",
+    price: "$10-15 per person",
+    dishes: "Gyro (Lamb Meat) Platter, Sides: Rice, Salad, or Fries",
+    description: "Try their best sell burger",
+    imageUrl: "https://duyt4h9nfnj50.cloudfront.net/resized/bulk_actions_image_0d0e0a15-9ce7-4b87-abd2-c2d0453ec4ba-w2880-a1.jpg"
+)
+
+let grazianoGrocery = Restaurant(
+    id: "2",
+    title: "J.P. Graziano Grocery",
+    address: "901 W Randolph St, Chicago, IL 60607",
+    price: "$10-20 per person",
+    dishes: "Mr. G sub, JPG Italian Beef (available after 6p)",
+    description: "If you love a good Italian sub, look no further. J.P. Graziano is truly a Chicago institution and has been at the same location since 1938. Their Mr. G sub is to die for, and don’t forget to get a bottle of giardiniera with you home.",
+    imageUrl: "https://jpgraziano.com/wp-content/uploads/2017/03/beef-300x220.jpeg?x30419"
+)
+
 let recipesTestData = [avocadoToast, pasta]
 
 let plansTestData = [
-    [pasta, greekPrime, avocadoToast, pasta],
-    [pasta, pasta, avocadoToast, pasta],
-    [pasta, pasta, avocadoToast, avocadoToast],
-    [avocadoToast, avocadoToast, avocadoToast, avocadoToast],
+    [avocadoToast, greekPrime, avocadoToast, pasta],
+    [pasta, mincePorkRice, avocadoToast, grazianoGrocery],
+    [avocadoToast, fiveGuys, pasta, avocadoToast],
+    [salad, avocadoToast, avocadoToast, avocadoToast],
     [pasta, avocadoToast, avocadoToast, pasta],
     [pasta, pasta, avocadoToast, pasta],
     [pasta, avocadoToast, avocadoToast, pasta]
