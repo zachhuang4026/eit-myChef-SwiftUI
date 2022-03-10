@@ -28,6 +28,7 @@
 		A49FAD2F27D9430E00511610 /* PlansManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49FAD2E27D9430E00511610 /* PlansManager.swift */; };
 		A49FAD3127D9627100511610 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49FAD3027D9627000511610 /* RestaurantDetailView.swift */; };
 		A49FAD3327D9771200511610 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = A49FAD3227D9771200511610 /* Recipes.json */; };
+		A49FAD3F27D9810000511610 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49FAD3E27D9810000511610 /* FeedsView.swift */; };
 		A4D5DD8D27D8E69200B25DB4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D5DD8C27D8E69200B25DB4 /* ModelData.swift */; };
 		A4D5DD9327D8FAAF00B25DB4 /* Ingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = A4D5DD9227D8FAAF00B25DB4 /* Ingredients.json */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		A49FAD2E27D9430E00511610 /* PlansManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansManager.swift; sourceTree = "<group>"; };
 		A49FAD3027D9627000511610 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		A49FAD3227D9771200511610 /* Recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Recipes.json; path = ../../../../../../Desktop/Recipes.json; sourceTree = "<group>"; };
+		A49FAD3E27D9810000511610 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
 		A4D5DD8C27D8E69200B25DB4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A4D5DD9227D8FAAF00B25DB4 /* Ingredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ingredients.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 		A4940DD127CE686100C2091C /* My Chef-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A49FAD3E27D9810000511610 /* FeedsView.swift */,
 				A4940DD227CE686100C2091C /* My_Chef_SwiftUIApp.swift */,
 				A4940E0027CE6CEB00C2091C /* PlansView.swift */,
 				A4940E0427CF124E00C2091C /* FridgeView.swift */,
@@ -226,6 +229,7 @@
 				A4940DFE27CE6CCC00C2091C /* RecipesView.swift in Sources */,
 				A49FAD2F27D9430E00511610 /* PlansManager.swift in Sources */,
 				A4940E0527CF124E00C2091C /* FridgeView.swift in Sources */,
+				A49FAD3F27D9810000511610 /* FeedsView.swift in Sources */,
 				A4940DF727CE6CBB00C2091C /* Models.swift in Sources */,
 				A49FAD3127D9627100511610 /* RestaurantDetailView.swift in Sources */,
 				A40CCD7C27D03EFC00183131 /* RecipeDetailView.swift in Sources */,
