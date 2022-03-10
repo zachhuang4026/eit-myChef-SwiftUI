@@ -39,7 +39,7 @@ class RecipeData: ObservableObject {
     @Published var recipes: [Recipe] = []
     
     init() {
-            let url = Bundle.main.url(forResource: "Recipes", withExtension: "json")!
+            let url = Bundle.main.url(forResource: "Recipes2", withExtension: "json")!
             
             let task = URLSession.shared.dataTask(with: url) { data, _, error in
                 

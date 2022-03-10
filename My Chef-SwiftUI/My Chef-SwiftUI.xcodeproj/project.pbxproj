@@ -27,6 +27,7 @@
 		A4940E0527CF124E00C2091C /* FridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940E0427CF124E00C2091C /* FridgeView.swift */; };
 		A49FAD2F27D9430E00511610 /* PlansManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49FAD2E27D9430E00511610 /* PlansManager.swift */; };
 		A49FAD3127D9627100511610 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49FAD3027D9627000511610 /* RestaurantDetailView.swift */; };
+		A49FAD3327D9771200511610 /* Recipes2.json in Resources */ = {isa = PBXBuildFile; fileRef = A49FAD3227D9771200511610 /* Recipes2.json */; };
 		A4D5DD8D27D8E69200B25DB4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D5DD8C27D8E69200B25DB4 /* ModelData.swift */; };
 		A4D5DD9327D8FAAF00B25DB4 /* Ingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = A4D5DD9227D8FAAF00B25DB4 /* Ingredients.json */; };
 		A4D5DD9527D8FAD900B25DB4 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = A4D5DD9427D8FAD900B25DB4 /* Recipes.json */; };
@@ -47,6 +48,7 @@
 		A4940E0427CF124E00C2091C /* FridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeView.swift; sourceTree = "<group>"; };
 		A49FAD2E27D9430E00511610 /* PlansManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansManager.swift; sourceTree = "<group>"; };
 		A49FAD3027D9627000511610 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		A49FAD3227D9771200511610 /* Recipes2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Recipes2.json; path = ../../../../../../Desktop/Recipes2.json; sourceTree = "<group>"; };
 		A4D5DD8C27D8E69200B25DB4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A4D5DD9227D8FAAF00B25DB4 /* Ingredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ingredients.json; sourceTree = "<group>"; };
 		A4D5DD9427D8FAD900B25DB4 /* Recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				A4D5DD9227D8FAAF00B25DB4 /* Ingredients.json */,
+				A49FAD3227D9771200511610 /* Recipes2.json */,
 				A4D5DD9427D8FAD900B25DB4 /* Recipes.json */,
 			);
 			path = DataBase;
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D5DD9527D8FAD900B25DB4 /* Recipes.json in Resources */,
+				A49FAD3327D9771200511610 /* Recipes2.json in Resources */,
 				A4D5DD9327D8FAAF00B25DB4 /* Ingredients.json in Resources */,
 				A4940DDA27CE686200C2091C /* Preview Assets.xcassets in Resources */,
 				A4940DD727CE686200C2091C /* Assets.xcassets in Resources */,
