@@ -2,63 +2,63 @@
   {
     "id": "art",
     "title": "artichoke",
-    "quantity": "0",
+    "quantity": "1",
     "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ar",
     "title": "arugula",
-    "quantity": "0",
+    "quantity": "2",
     "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "as",
     "title": "asparagus",
-    "quantity": "0",
+    "quantity": "1",
     "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "avo",
     "title": "avocado",
-    "quantity": "0",
+    "quantity": "1 3/4",
     "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ba1",
     "title": "bacon",
-    "quantity": "0",
+    "quantity": "2",
     "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ba2",
     "title": "basil",
-    "quantity": "0",
+    "quantity": "1",
     "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "ba3",
     "title": "bay_leaves",
-    "quantity": "0",
+    "quantity": "2",
     "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "be2",
     "title": "beef",
-    "quantity": "0",
+    "quantity": "2",
     "quantifier": "piece",
     "state": "open"
   },
   {
     "id": "be1",
     "title": "beets",
-    "quantity": "0",
+    "quantity": "10",
     "quantifier": "piece",
     "state": "open"
   },

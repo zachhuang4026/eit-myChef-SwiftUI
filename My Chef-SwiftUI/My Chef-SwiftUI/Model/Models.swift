@@ -90,7 +90,7 @@ let pasta = Recipe(title:"Pasta",
                   instructions: "Cook the pasta for 10 minutes, add tomato sauce."
                )
 
-let salad = Recipe(title:"salad",
+let salad = Recipe(title:"Salad",
                    id: "sld_2345",
                    description: "You won’t believe",
                    servings: "2-3",
@@ -111,6 +111,29 @@ let mincePorkRice = Recipe(title:"Mince Pork Rice",
                           ingredients: [carrot, water],
                           instructions: "Cook the pasta for 10 minutes, add tomato sauce."
                        )
+
+let tomatoEggNoodle = Recipe(title:"Tomato Egg Noodle",
+                           id: "ten",
+                           description: "Tomato egg noodle, a vegetarian, go-to emergency meal on a busy day. Here I'm adding my own twist by adding garlic and sugar that make the sauce more flavorful. Enjoy!!",
+                           servings: "2-3",
+                           difficulty: "Easy",
+                           prepTime: "10",
+                           imageUrl: "https://www.saveur.com/uploads/2020/12/29/ADZ7URX7RBHTRJ77KJK4EGNQUU.jpg",
+                          ingredients: [carrot, water],
+                          instructions: "Cook the pasta for 10 minutes, add tomato sauce."
+                       )
+
+let japanChickenCurry = Recipe(title:"Japanese Chicken Curry",
+                           id: "jcc",
+                           description: "Tomato egg noodle, a vegetarian, go-to emergency meal on a busy day. Here I'm adding my own twist by adding garlic and sugar that make the sauce more flavorful. Enjoy!!",
+                           servings: "2-3",
+                           difficulty: "Easy",
+                           prepTime: "10",
+                           imageUrl: "https://www.justonecookbook.com/wp-content/uploads/2021/10/Japanese-Chicken-Curry-3769-II.jpg",
+                          ingredients: [carrot, water],
+                          instructions: "Cook the pasta for 10 minutes, add tomato sauce."
+                       )
+
 
 let greekPrime = Restaurant(
     id: "1",
@@ -145,12 +168,12 @@ let grazianoGrocery = Restaurant(
 let recipesTestData = [avocadoToast, pasta]
 
 let plansTestData = [
-    [avocadoToast, greekPrime, avocadoToast, pasta],
-    [pasta, mincePorkRice, avocadoToast, grazianoGrocery],
+    [avocadoToast, greekPrime, tomatoEggNoodle, pasta],
+    [pasta, mincePorkRice, salad, grazianoGrocery],
     [avocadoToast, fiveGuys, pasta, avocadoToast],
-    [salad, avocadoToast, avocadoToast, avocadoToast],
-    [pasta, avocadoToast, avocadoToast, pasta],
-    [pasta, pasta, avocadoToast, pasta],
+    [salad, japanChickenCurry, avocadoToast, avocadoToast],
+    [pasta, avocadoToast, avocadoToast, tomatoEggNoodle],
+    [salad, pasta, avocadoToast, pasta],
     [pasta, avocadoToast, avocadoToast, pasta]
 ]
 
