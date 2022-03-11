@@ -69,6 +69,48 @@ let water = Ingredient(id: "1",
                        quantifier: "cup",
                        state: "open")
 
+let salmon = Ingredient(id: "sal",
+                        title: "salmon",
+                        quantity: "3",
+                        quantifier: "piece",
+                        state: "✅")
+
+let oliveOil = Ingredient(id: "oli1",
+                        title: "olive_oil",
+                        quantity: "2",
+                        quantifier: "teaspoon",
+                        state: "✅")
+
+let butter = Ingredient(id: "bu",
+                        title: "butter",
+                        quantity: "2",
+                        quantifier: "tablespoon",
+                        state: "✅")
+
+let garlic = Ingredient(id: "ga",
+                        title: "butter",
+                        quantity: "4",
+                        quantifier: "piece",
+                        state: "❌")
+
+let yellowOnion = Ingredient(id: "yon",
+                        title: "yellow_onion",
+                        quantity: "1",
+                        quantifier: "piece",
+                        state: "✅")
+
+let broth = Ingredient(id: "br",
+                        title: "broth",
+                        quantity: "1/3",
+                        quantifier: "cup (80ml)",
+                        state: "✅")
+
+let tomato = Ingredient(id: "to",
+                        title: "tomato",
+                        quantity: "1",
+                        quantifier: "piece",
+                        state: "❌")
+
 let avocadoToast = Recipe(title:"Avocado Toast",
                           id: "avt_2345",
                           description: "You won’t believe",
@@ -76,9 +118,21 @@ let avocadoToast = Recipe(title:"Avocado Toast",
                           difficulty: "Easy",
                           prepTime: "20",
                           imageUrl: "https://www.macheesmo.com/wp-content/uploads/2018/10/Everything-Avocado-Toast.jpg",
-                         ingredients: [carrot, water],
+                          ingredients: [carrot, water],
                           instructions: "Slice avocado, smash it, paste it on the toast, add some pepper."
                         )
+
+let tusconSalmon = Recipe(title:"Tuscan Salmon Over Pasta",
+                          id: "tsov",
+                          description: "You won’t believe how easy and fast it is to cook salmon this way! These pan-seared salmon filets are juicy and tender on the inside with perfectly crisp edges. You’ll never want a regular salmon recipe again after trying this one!",
+                          servings: "2-3",
+                          difficulty: "easy",
+                          prepTime: "20",
+                          imageUrl: "https://thefoodcharlatan.com/wp-content/uploads/2020/05/Creamy-Tuscan-Salmon-30-Minute-Dinner-2.jpg",
+                          ingredients: [salmon, oliveOil, butter, garlic, yellowOnion, broth, tomato],
+                          instructions: "1. Heat the oil in a large skillet over medium-high heat. Season the salmon filets on both sides with salt and pepper, and sear in the hot pan, flesh-side down first, for 5 minutes on each side. Once salmon filets are cooked, remove from the pan and set aside.\n2. In the same pan, melt the butter in the remaining cooking juices leftover. Add in the garlic and fry until fragrant (about one minute). Add onion and stir fry until translucent. Add fresh tomatoes (or sun-dried tomatoes if you have for stronger taste). Finally, pour in the vegetable or chicken broth, and allow the sauce to reduce down slightly. \n3. At the same time, boil water in another pot and cook the pasta of your choice.\n4. Reduce heat to low, add the heavy cream, and bring to a gentle simmer while stirring occasionally. Season the cream sauce with salt and pepper. Add in the baby spinach and allow to wilt in the sauce, and add in the parmesan cheese. Allow the cream sauce to simmer for a further minute until cheese melts through. \n5. Add the grilled salmon filets back into the pan and spoon the sauce over each filet. Serve the delish creamy Tuscan salmon over pasta. Enjoy!")
+
+
 let pasta = Recipe(title:"Pasta",
                    id: "pas_2345",
                    description: "You won’t believe",
@@ -168,11 +222,11 @@ let grazianoGrocery = Restaurant(
 let recipesTestData = [avocadoToast, pasta]
 
 let plansTestData = [
-    [avocadoToast, greekPrime, tomatoEggNoodle, pasta],
+    [avocadoToast, greekPrime, salad, tusconSalmon],
     [pasta, mincePorkRice, salad, grazianoGrocery],
     [avocadoToast, fiveGuys, pasta, avocadoToast],
     [salad, japanChickenCurry, avocadoToast, avocadoToast],
-    [pasta, avocadoToast, avocadoToast, tomatoEggNoodle],
+    [pasta, tomatoEggNoodle, avocadoToast, tomatoEggNoodle],
     [salad, pasta, avocadoToast, pasta],
     [pasta, avocadoToast, avocadoToast, pasta]
 ]
