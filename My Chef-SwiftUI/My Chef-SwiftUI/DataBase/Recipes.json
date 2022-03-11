@@ -1,0 +1,482 @@
+[
+    {
+      "title": "Tomato Egg Noodle",
+      "id": "ten",
+      "description": "Tomato egg noodle, a vegetarian, go-to emergency meal on a busy day. Here I'm adding my own twist by adding garlic and sugar that make the sauce more flavorful. Enjoy!!",
+      "servings": "2",
+      "difficulty": "easy",
+      "prepTime": "15",
+      "imageUrl": "https://www.saveur.com/uploads/2020/12/29/ADZ7URX7RBHTRJ77KJK4EGNQUU.jpg",
+      "ingredients": [
+       {
+          "id": "sal",
+          "title": "salmon",
+          "quantity": "3",
+          "quantifier": "piece",
+          "state": "✅"
+        },
+        {
+          "id": "oli1",
+          "title": "olive_oil",
+          "quantity": "2",
+          "quantifier": "teaspoon",
+          "state": "✅"
+        },
+        {
+          "id": "yon",
+          "title": "yellow_onion",
+          "quantity": "1",
+          "quantifier": "piece",
+          "state": "✅"
+        },
+        {
+          "id": "br",
+          "title": "broth",
+          "quantity": "1/3",
+          "quantifier": "cup (80ml)",
+          "state": "✅"
+        },
+        {
+          "id": "to",
+          "title": "tomato",
+          "quantity": "1",
+          "quantifier": "piece",
+          "state": "❌"
+        }
+      ],
+      "instructions": "1. Finely chop shallot half and transfer to bowl. Using the tines of a fork or a reamer, juice lemon half over bowl. Discard seeds; you should have about 2 Tbsp. juice. Chop your garlic and transfer to the bowl. Whisk in 2 Tbsp. Dijon mustard; season with salt and pepper.\n 2. Wash and dry 1 bunch kale, then pat leaves dry with a clean towel. Strip leaves from thick stems, discarding stems, then thinly slice leaves. Transfer to a separate large bowl.\n 3. Trim knobby end of 6 oz. brussels sprouts and pull off any dried or gnarly outer leaves. Cut all brussels in half lengthwise, then arrange halves cut side down on board and very thinly slice.\n 4. Optional Step: Roast the brussel sprouts and ¼ of your kale with olive oil, salt and pepper in an 375F oven for 5 minutes or  until the brussel sprouts/kale begin to get crispy. This adds a great roasted flavor to your salad!)\n 5. Add (roasted) brussel sprouts to bowl with kale (and roasted kale).\n 6. Slice 1 apple in half, cut out core and seeds, then thinly slice. Add to bowl with kale. Snack on remaining apple.\n 7. Whisk remaining ⅓ cup oil into bowl with lemon mixture.\n 8. Drizzle dressing over kale mixture; season with salt and pepper. Toss to coat.\n 9. (Optional) Add 2 oz of grated cheese and sunflower seeds and toss lightly to incorporate."
+
+      },
+    {
+      "title": "Japanese Chicken Curry",
+      "id": "jcc",
+      "description": "Japanese 🇯🇵 curry is one ultimate comfort food! This dish is best made with slow cooker or instant pot. You can also substitute with a non-stick pot. Here I'm adding in onions and carrots for a balanced, healthy meal. Enjoy!",
+      "servings": "2",
+      "difficulty": "easy",
+      "prepTime": "15",
+      "imageUrl": "https://www.justonecookbook.com/wp-content/uploads/2021/10/Japanese-Chicken-Curry-3769-II.jpg",
+      "ingredients": [
+       {
+          "id": "sal",
+          "title": "salmon",
+          "quantity": "3",
+          "quantifier": "piece",
+          "state": "✅"
+        },
+        {
+          "id": "oli1",
+          "title": "olive_oil",
+          "quantity": "2",
+          "quantifier": "teaspoon",
+          "state": "✅"
+        },
+        {
+          "id": "yon",
+          "title": "yellow_onion",
+          "quantity": "1",
+          "quantifier": "piece",
+          "state": "✅"
+        },
+        {
+          "id": "br",
+          "title": "broth",
+          "quantity": "1/3",
+          "quantifier": "cup (80ml)",
+          "state": "✅"
+        },
+        {
+          "id": "to",
+          "title": "tomato",
+          "quantity": "1",
+          "quantifier": "piece",
+          "state": "❌"
+        }
+      ],
+      "instructions": "1. Finely chop shallot half and transfer to bowl. Using the tines of a fork or a reamer, juice lemon half over bowl. Discard seeds; you should have about 2 Tbsp. juice. Chop your garlic and transfer to the bowl. Whisk in 2 Tbsp. Dijon mustard; season with salt and pepper.\n 2. Wash and dry 1 bunch kale, then pat leaves dry with a clean towel. Strip leaves from thick stems, discarding stems, then thinly slice leaves. Transfer to a separate large bowl.\n 3. Trim knobby end of 6 oz. brussels sprouts and pull off any dried or gnarly outer leaves. Cut all brussels in half lengthwise, then arrange halves cut side down on board and very thinly slice.\n 4. Optional Step: Roast the brussel sprouts and ¼ of your kale with olive oil, salt and pepper in an 375F oven for 5 minutes or  until the brussel sprouts/kale begin to get crispy. This adds a great roasted flavor to your salad!)\n 5. Add (roasted) brussel sprouts to bowl with kale (and roasted kale).\n 6. Slice 1 apple in half, cut out core and seeds, then thinly slice. Add to bowl with kale. Snack on remaining apple.\n 7. Whisk remaining ⅓ cup oil into bowl with lemon mixture.\n 8. Drizzle dressing over kale mixture; season with salt and pepper. Toss to coat.\n 9. (Optional) Add 2 oz of grated cheese and sunflower seeds and toss lightly to incorporate."
+
+      },
+    {
+      "title": "Asparagus \n Pasta",
+      "id": "lap",
+      "description": "No vegetable says spring better in asparagus. This Creamy Lemon Asparagus Pasta is a vegan spin on Spaghetti al Limone bursting with zippy and bright spring flavors. Easy but gourmet and perfect for spring entertaining!",
+      "servings": "2",
+      "difficulty": "easy",
+      "prepTime": "25",
+      "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190305-lemon-garlic-asparagus-pasta-horizontal-161-1553190755.jpg?resize=980:*",
+      "ingredients": [
+       {
+          "id": "sal",
+          "title": "salmon",
+          "quantity": "3",
+          "quantifier": "piece",
+          "state": "✅"
+        },
+        {
+          "id": "oli1",
+          "title": "olive_oil",
+          "quantity": "2",
+          "quantifier": "teaspoon",
+          "state": "✅"
+        },
+        {
+          "id": "yon",
+          "title": "yellow_onion",
+          "quantity": "1",
+          "quantifier": "piece",
+          "state": "✅"
+        },
+        {
+          "id": "br",
+          "title": "broth",
+          "quantity": "1/3",
+          "quantifier": "cup (80ml)",
+          "state": "✅"
+        },
+        {
+          "id": "to",
+          "title": "tomato",
+          "quantity": "1",
+          "quantifier": "piece",
+          "state": "❌"
+        }
+      ],
+      "instructions": "1. Finely chop shallot half and transfer to bowl. Using the tines of a fork or a reamer, juice lemon half over bowl. Discard seeds; you should have about 2 Tbsp. juice. Chop your garlic and transfer to the bowl. Whisk in 2 Tbsp. Dijon mustard; season with salt and pepper.\n 2. Wash and dry 1 bunch kale, then pat leaves dry with a clean towel. Strip leaves from thick stems, discarding stems, then thinly slice leaves. Transfer to a separate large bowl.\n 3. Trim knobby end of 6 oz. brussels sprouts and pull off any dried or gnarly outer leaves. Cut all brussels in half lengthwise, then arrange halves cut side down on board and very thinly slice.\n 4. Optional Step: Roast the brussel sprouts and ¼ of your kale with olive oil, salt and pepper in an 375F oven for 5 minutes or  until the brussel sprouts/kale begin to get crispy. This adds a great roasted flavor to your salad!)\n 5. Add (roasted) brussel sprouts to bowl with kale (and roasted kale).\n 6. Slice 1 apple in half, cut out core and seeds, then thinly slice. Add to bowl with kale. Snack on remaining apple.\n 7. Whisk remaining ⅓ cup oil into bowl with lemon mixture.\n 8. Drizzle dressing over kale mixture; season with salt and pepper. Toss to coat.\n 9. (Optional) Add 2 oz of grated cheese and sunflower seeds and toss lightly to incorporate."
+
+      },
+    {
+      "title": "Chicken & Egg Fried Rice",
+      "id": "cert",
+      "description": "Another quick, easy, and filling recipe. We’re not reinventing the wheel by putting this on our recipe list but giving you an opportunity to test and experiment! If you have leftover ingredients, try them out! If you have meat other than chicken, experiment! See where the food takes you! ",
+      "servings": "2",
+      "difficulty": "easy",
+      "prepTime": "25",
+      "imageUrl": "https://www.averiecooks.com/wp-content/uploads/2016/02/chickenfriedrice-5.jpg",
+      "ingredients": [
+       {
+          "id": "sal",
+          "title": "salmon",
+          "quantity": "3",
+          "quantifier": "piece",
+          "state": "✅"
+        },
+        {
+          "id": "oli1",
+          "title": "olive_oil",
+          "quantity": "2",
+          "quantifier": "teaspoon",
+          "state": "✅"
+        },
+        {
+          "id": "yon",
+          "title": "yellow_onion",
+          "quantity": "1",
+          "quantifier": "piece",
+          "state": "✅"
+        },
+        {
+          "id": "br",
+          "title": "broth",
+          "quantity": "1/3",
+          "quantifier": "cup (80ml)",
+          "state": "✅"
+        },
+        {
+          "id": "to",
+          "title": "tomato",
+          "quantity": "1",
+          "quantifier": "piece",
+          "state": "❌"
+        }
+      ],
+      "instructions": "1. Finely chop shallot half and transfer to bowl. Using the tines of a fork or a reamer, juice lemon half over bowl. Discard seeds; you should have about 2 Tbsp. juice. Chop your garlic and transfer to the bowl. Whisk in 2 Tbsp. Dijon mustard; season with salt and pepper.\n 2. Wash and dry 1 bunch kale, then pat leaves dry with a clean towel. Strip leaves from thick stems, discarding stems, then thinly slice leaves. Transfer to a separate large bowl.\n 3. Trim knobby end of 6 oz. brussels sprouts and pull off any dried or gnarly outer leaves. Cut all brussels in half lengthwise, then arrange halves cut side down on board and very thinly slice.\n 4. Optional Step: Roast the brussel sprouts and ¼ of your kale with olive oil, salt and pepper in an 375F oven for 5 minutes or  until the brussel sprouts/kale begin to get crispy. This adds a great roasted flavor to your salad!)\n 5. Add (roasted) brussel sprouts to bowl with kale (and roasted kale).\n 6. Slice 1 apple in half, cut out core and seeds, then thinly slice. Add to bowl with kale. Snack on remaining apple.\n 7. Whisk remaining ⅓ cup oil into bowl with lemon mixture.\n 8. Drizzle dressing over kale mixture; season with salt and pepper. Toss to coat.\n 9. (Optional) Add 2 oz of grated cheese and sunflower seeds and toss lightly to incorporate."
+
+      },
+    {
+      "title": "Winter Crunch Salad",
+      "id": "wcs",
+      "description": "This winter crunch salad is a quick, delicious, and healthy weeknight meal or lunch! Bring your leftovers to class on Wednesday so we can see how each others salads turned out!!",
+      "servings": "4",
+      "difficulty": "easy",
+      "prepTime": "10",
+      "imageUrl": "https://assets.bonappetit.com/photos/5a3aa2d300190231c0f0caa0/16:9/w_2240,c_limit/kale-and-brussels-sprout-salad.jpg",
+      "ingredients": [
+       {
+          "id": "sal",
+          "title": "salmon",
+          "quantity": "3",
+          "quantifier": "piece",
+          "state": "✅"
+        },
+        {
+          "id": "oli1",
+          "title": "olive_oil",
+          "quantity": "2",
+          "quantifier": "teaspoon",
+          "state": "✅"
+        },
+        {
+          "id": "yon",
+          "title": "yellow_onion",
+          "quantity": "1",
+          "quantifier": "piece",
+          "state": "✅"
+        },
+        {
+          "id": "br",
+          "title": "broth",
+          "quantity": "1/3",
+          "quantifier": "cup (80ml)",
+          "state": "✅"
+        },
+        {
+          "id": "to",
+          "title": "tomato",
+          "quantity": "1",
+          "quantifier": "piece",
+          "state": "❌"
+        }
+      ],
+      "instructions": "1. Finely chop shallot half and transfer to bowl. Using the tines of a fork or a reamer, juice lemon half over bowl. Discard seeds; you should have about 2 Tbsp. juice. Chop your garlic and transfer to the bowl. Whisk in 2 Tbsp. Dijon mustard; season with salt and pepper.\n 2. Wash and dry 1 bunch kale, then pat leaves dry with a clean towel. Strip leaves from thick stems, discarding stems, then thinly slice leaves. Transfer to a separate large bowl.\n 3. Trim knobby end of 6 oz. brussels sprouts and pull off any dried or gnarly outer leaves. Cut all brussels in half lengthwise, then arrange halves cut side down on board and very thinly slice.\n 4. Optional Step: Roast the brussel sprouts and ¼ of your kale with olive oil, salt and pepper in an 375F oven for 5 minutes or  until the brussel sprouts/kale begin to get crispy. This adds a great roasted flavor to your salad!)\n 5. Add (roasted) brussel sprouts to bowl with kale (and roasted kale).\n 6. Slice 1 apple in half, cut out core and seeds, then thinly slice. Add to bowl with kale. Snack on remaining apple.\n 7. Whisk remaining ⅓ cup oil into bowl with lemon mixture.\n 8. Drizzle dressing over kale mixture; season with salt and pepper. Toss to coat.\n 9. (Optional) Add 2 oz of grated cheese and sunflower seeds and toss lightly to incorporate."
+
+      },
+    {
+    "title": "korean Rolled Egg Omelet",
+    "id": "knd",
+    "description": "This Korean omelet is not only healthy and super easy to make, but also versatile–it can be served as a side dish with dinner, or easily whipped up into the lunch box for the next day. Dried seaweed is the critical ingredient here to add more fragrance.!",
+    "servings": "2-3'",
+    "difficulty": "easy",
+    "prepTime": "10",
+    "imageUrl": "https://asianinspirations.com.au/wp-content/uploads/2019/04/R01997_Korean_Rolled_Omelette.jpg",
+    "ingredients": [
+     {
+        "id": "sal",
+        "title": "salmon",
+        "quantity": "3",
+        "quantifier": "piece",
+        "state": "✅"
+      },
+      {
+        "id": "oli1",
+        "title": "olive_oil",
+        "quantity": "2",
+        "quantifier": "teaspoon",
+        "state": "✅"
+      },
+      {
+        "id": "yon",
+        "title": "yellow_onion",
+        "quantity": "1",
+        "quantifier": "piece",
+        "state": "✅"
+      },
+      {
+        "id": "br",
+        "title": "broth",
+        "quantity": "1/3",
+        "quantifier": "cup (80ml)",
+        "state": "✅"
+      },
+      {
+        "id": "to",
+        "title": "tomato",
+        "quantity": "1",
+        "quantifier": "piece",
+        "state": "❌"
+      }
+    ],
+    "instructions": "1. Finely chop the scallion and carrot.\n 2. In a bowl, beat the eggs well. Stir in salt and pepper.\n 3. Stir in the chopped vegetables. \n 4. Add a teaspoon of vegetable oil to a medium size non-stick pan and distribute the oil evenly using a napkin or paper towel. Preheat over medium low heat, until it feels hot when you place your hand 2 to 3 inches above the bottom of the pan.\n 5. Add 1/2 of the egg mixture to the pan. Swirl it around to cover the pan. Let it cook until the top begins to set but is still wet. Place a large piece (or several pieces if not big enough) of dried seaweed to cover the egg.\n 6. Using a spatula, lift one end of the egg (about 1-1/2 inches) and fold it over to the other side. Reduce the heat or raise the pan away from the heat for a little while if the bottom is browning.\n 7. Lift the folded part and fold it again. Pull the egg to the rolled side, making room on the round end for more egg mixture. Add 1/2 of the remaining egg and spread to cover the open space.\n 8. When the egg addition is set, lift the folded part and fold it again. Pull the egg to the rolled side and repeat the process with the remaining egg to make an about 2-inch egg log.\n 9. Remove from the pan and let cool for about 5 minutes. Slice the egg into thick, even pieces (3/4 to 1-inch thick)."
+
+    },
+  {
+    "title": "tuscan_salmon_over_pasta",
+    "id": "tsov",
+    "description": "You won’t believe how easy and fast it is to cook salmon this way! These pan-seared salmon filets are juicy and tender on the inside with perfectly crisp edges. You’ll never want a regular salmon recipe again after trying this one!",
+    "servings": "2-3'",
+    "difficulty": "easy",
+    "prepTime": "20",
+    "imageUrl": "https://thefoodcharlatan.com/wp-content/uploads/2020/05/Creamy-Tuscan-Salmon-30-Minute-Dinner-2.jpg",
+    "ingredients": [
+  {
+    "id": "sal",
+    "title": "salmon",
+    "quantity": "3",
+    "quantifier": "piece",
+    "state": "✅"
+  },
+  {
+    "id": "oli1",
+    "title": "olive_oil",
+    "quantity": "2",
+    "quantifier": "teaspoon",
+    "state": "✅"
+  },
+  {
+    "id": "bu",
+    "title": "butter",
+    "quantity": "2",
+    "quantifier": "tablespoon",
+    "state": "✅"
+  },
+  {
+    "id": "ga",
+    "title": "garlic",
+    "quantity": "4",
+    "quantifier": "piece",
+    "state": "❌"
+  },
+  {
+    "id": "yon",
+    "title": "yellow_onion",
+    "quantity": "1",
+    "quantifier": "piece",
+    "state": "✅"
+  },
+  {
+    "id": "br",
+    "title": "broth",
+    "quantity": "1/3",
+    "quantifier": "cup (80ml)",
+    "state": "✅"
+  },
+  {
+    "id": "to",
+    "title": "tomato",
+    "quantity": "1",
+    "quantifier": "piece",
+    "state": "❌"
+  },
+  {
+    "id": "hyc",
+    "title": "heavy_cream",
+    "quantity": "1 3/4",
+    "quantifier": "cup (80ml)",
+    "state": "❌"
+  },
+  {
+    "id": "sa",
+    "title": "salt",
+    "quantity": "1",
+    "quantifier": "teaspoon",
+    "state": "✅"
+  },
+  {
+    "id": "bp",
+    "title": "black_pepper",
+    "quantity": "1",
+    "quantifier": "teaspoon",
+    "state": "✅"
+  },
+  {
+    "id": "spin",
+    "title": "spinach",
+    "quantity": "3",
+    "quantifier": "cup (80ml)",
+    "state": "✅"
+  },
+  {
+    "id": "par2",
+    "title": "parmesan",
+    "quantity": "1/2",
+    "quantifier": "cup (80ml)",
+    "state": "✅"
+  }
+],
+    "instructions": "1. Heat the oil in a large skillet over medium-high heat. Season the salmon filets on both sides with salt and pepper, and sear in the hot pan, flesh-side down first, for 5 minutes on each side. Once salmon filets are cooked, remove from the pan and set aside.\n2. In the same pan, melt the butter in the remaining cooking juices leftover. Add in the garlic and fry until fragrant (about one minute). Add onion and stir fry until translucent. Add fresh tomatoes (or sun-dried tomatoes if you have for stronger taste). Finally, pour in the vegetable or chicken broth, and allow the sauce to reduce down slightly. \n3. At the same time, boil water in another pot and cook the pasta of your choice.\n4. Reduce heat to low, add the heavy cream, and bring to a gentle simmer while stirring occasionally. Season the cream sauce with salt and pepper. Add in the baby spinach and allow to wilt in the sauce, and add in the parmesan cheese. Allow the cream sauce to simmer for a further minute until cheese melts through. \n5. Add the grilled salmon filets back into the pan and spoon the sauce over each filet. Serve the delish creamy Tuscan salmon over pasta. Enjoy!"
+  },
+  {
+    "title": "hearty_russian_soup",
+    "id": "hrs",
+    "description": "This Russian Soup🇷🇺 recipe has been passed down in my family from my grandmother👵. She learned it from her father (my great grandfather👴) after he studied abroad in the Soviet Union. It has been my go-to simple, nutritious meal on cold, winter nights. Enjoy!",
+    "servings": "2",
+    "difficulty": "medium",
+    "prepTime": "30",
+    "imageUrl": "https://valentinascorner.com/wp-content/uploads/2015/05/Simple-Russian-Soup-1.jpg",
+    "ingredients": [
+  {
+    "id": "ct",
+    "title": "chicken_thigh",
+    "quantity": "1/2",
+    "quantifier": "lbs",
+    "state": "✅"
+  },
+  {
+    "id": "wt",
+    "title": "water",
+    "quantity": "4",
+    "quantifier": "cup (80ml)",
+    "state": "✅"
+  },
+  {
+    "id": "uslb",
+    "title": "unsalted_butter",
+    "quantity": "1/2",
+    "quantifier": "tablespoon",
+    "state": "❌"
+  },
+  {
+    "id": "vgo",
+    "title": "vegetable_oil",
+    "quantity": "1",
+    "quantifier": "teaspoon",
+    "state": "❌"
+  },
+  {
+    "id": "on",
+    "title": "onion",
+    "quantity": "1",
+    "quantifier": "piece",
+    "state": "✅"
+  },
+  {
+    "id": "ca1",
+    "title": "carrot",
+    "quantity": "1/2",
+    "quantifier": "piece",
+    "state": "✅"
+  },
+  {
+    "id": "aghp",
+    "title": "angle_hair_pasta",
+    "quantity": "4",
+    "quantifier": "oz",
+    "state": "✅"
+  },
+  {
+    "id": "vga",
+    "title": "vegeta",
+    "quantity": "1/2",
+    "quantifier": "teaspoon",
+    "state": "❌"
+  },
+  {
+    "id": "sa",
+    "title": "salt",
+    "quantity": "1/2",
+    "quantifier": "teaspoon",
+    "state": "✅"
+  },
+  {
+    "id": "bp",
+    "title": "black_pepper",
+    "quantity": "1/4",
+    "quantifier": "teaspoon",
+    "state": "✅"
+  },
+  {
+    "id": "ba3",
+    "title": "bay_leaves",
+    "quantity": "1",
+    "quantifier": "piece",
+    "state": "❌"
+  },
+  {
+    "id": "ga",
+    "title": "garlic",
+    "quantity": "1/2",
+    "quantifier": "piece",
+    "state": "✅"
+  }
+],
+    "instructions": "1. Cut chicken into bite-size pieces. Slice the garlic. Break bay leaf into small pieces. Combine the chicken, salt, pepper, bay leaf pieces, and garlic. Mix everything. Keep covered and refrigerated until ready to use.\n2. In a large pot, bring water to a soft boil. Add the seasoned chicken and cook over medium/high heat for about 10 minutes, removing any impurities that rise to the top.\n3. Finely chop the onions. In a skillet, over med/high heat, saute onions with butter and oil until onions are tender.\n4. Shred the carrot and add to the onions, saute until carrots are tender, stirring frequently so the carrots don't burn. Once sauteed, at to the soup.\n5. Meanwhile, peel and cube your potatoes. Add to the pot and cook for 10 minutes.\n6. Slice red pepper into thin strands. Break the pasta into small pieces. Add the pepper, seasoning and broken pasta into the soup. Cook until pasta is tender.\n7. Remove the soup from heat and add desired chopped herbs."
+  }
+]
